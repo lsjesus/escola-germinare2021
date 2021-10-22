@@ -1,0 +1,29 @@
+.header{
+    display: flex;
+    align-items: center;
+    background-color: #001489;
+    height: 84px;
+    padding: 28px 26px;
+}
+.logo{
+    height: 65px;
+}
+.navigation{
+    margin-left: auto;
+    width: 55%;
+}
+.menu{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.item-menu{
+    font-weight: 600;
+    color: white;
+}
+.about-us{
+    display: none;
+}
+.collaborator{
+    display: none;
+}
