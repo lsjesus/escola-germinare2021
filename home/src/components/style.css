@@ -21,7 +21,7 @@
     background: #001489;
     height: 134px;
     padding: 38px 26px;
-    box-shadow: 0px 5px 25px rgb(12, 1, 65);
+    box-shadow: 5px 5px 25px rgb(12, 1, 65);
 }
 .logo{
     height: 65px;
@@ -71,13 +71,72 @@
 }
 .chevrons{
     position: absolute;
-    top: 600px;
+    z-index: 10;
+    top: auto;
     display: block;
-    margin: 0 auto;
+    left: 50%;
     right: 50%;
-    font-size: 40px;
+    bottom: 0;
+    font-size: 50px;
     color: white;
-
-    
-
+    margin-bottom: 45px;
+    animation: fade-slide-up 1s 1s ease-out forwards,
+    pulse 2s 3s ease-out infinite;
+    opacity: 0;
 }
+@keyframes fade-slide-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-4rem);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  @keyframes fade-slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(4rem);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  @keyframes pop-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-4rem) scale(.8);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 1;
+      transform: none;
+    }
+    50% {
+      opacity: .8;
+      transform: scale(.8);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+@media only screen and (min-width: 1400px) {
+    .chevrons {
+      font-size: 75px;
+     
+    }
+    .item-menu{
+        font-size: 30px;
+    }
+  }

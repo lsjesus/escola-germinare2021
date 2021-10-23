@@ -5844,8 +5844,9 @@ fieldset:disabled .btn {
 
   padding: 0;
   margin-right: 15%;
-  margin-bottom: 11rem;
-  margin-left: 95%;
+  bottom: auto;
+  top: 50%;
+  margin-left: calc(98% - 18px);
   list-style: none;
 }
 .carousel-indicators [data-bs-target] {

@@ -44,15 +44,15 @@ const Header = ()=>{
                     <img src={Giroto} className='carrossel-img'></img>
                     <FiChevronsDown className='chevrons'/>
                 </CarouselItem>
-                <CarouselItem  interval={5000}>
+                <CarouselItem  interval={8000}>
                     <img src={Cleuton}  className='carrossel-img'></img>
                     <FiChevronsDown className='chevrons'/>
                 </CarouselItem >
-                <CarouselItem interval={5000}>
+                <CarouselItem interval={8000}>
                     <img src={Admissao}  className='carrossel-img'></img>
                     <FiChevronsDown className='chevrons'/>
                 </CarouselItem >
-                <CarouselItem  interval={5000}>
+                <CarouselItem  interval={8000}>
                     <img src={Universidade} className='carrossel-img'></img>
                     <FiChevronsDown className='chevrons'/>
                 </CarouselItem>
