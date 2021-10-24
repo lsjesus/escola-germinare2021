@@ -22,6 +22,7 @@
     height: 134px;
     padding: 38px 26px;
     box-shadow: 5px 5px 25px rgb(12, 1, 65);
+
 }
 .logo{
     height: 65px;
@@ -44,6 +45,7 @@
     font-size: 22px;
     cursor: pointer;
 }
+
 .about-us{
     display: none;
 }
@@ -64,10 +66,15 @@
 .admissao{
     color: #F7BF0A; 
     font-weight: 800; 
-    border: 3px solid;
+    /* border: 3px solid;
     border-radius: 10px;
-    padding: 10px;
+    padding: 10px; */
     cursor: pointer;
+    font-size: 23px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .chevrons{
     position: absolute;
@@ -83,6 +90,7 @@
     animation: fade-slide-up 1s 1s ease-out forwards,
     pulse 2s 3s ease-out infinite;
     opacity: 0;
+    cursor: pointer;
 }
 @keyframes fade-slide-down {
     0% {
@@ -140,3 +148,9 @@
         font-size: 30px;
     }
   }
+@media only screen and (max-width: 605px){
+  .chevrons{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+}

@@ -17,7 +17,7 @@ const Header = ()=>{
                         <li className='item-menu' className='admissao' >Admissão 2021/2022</li>
                         <li className='item-menu'>Doação</li>
                         <li className='item-menu'>Contato</li>
-                        <li className='item-menu'>
+                        <li className='item-menu about-us-li'>
                             Sobre nós
                             <ul className='about-us'>
                                 <li className='item-menu'>Valores</li>
@@ -27,7 +27,7 @@ const Header = ()=>{
                                 <li className='item-menu'>Projeto Acadêmico</li>
                             </ul>
                         </li>
-                        <li className='item-menu'>
+                        <li className='item-menu collaborator-li'>
                             <FaLock className='lock'/> Login
                             <ul className='collaborator'>
                                 <li className='item-menu'>Minha biblioteca</li>
