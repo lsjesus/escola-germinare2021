@@ -42,18 +42,22 @@ const Header = ()=>{
             <Carousel className='carouselzin'>
                 <CarouselItem interval={8000}>
                     <img src={Giroto} className='carrossel-img'></img>
+                    <h1 className='carousel-txt giroto'>Há mais de uma década germinando líderes.</h1>
                     <FiChevronsDown className='chevrons'/>
                 </CarouselItem>
                 <CarouselItem  interval={8000}>
                     <img src={Cleuton}  className='carrossel-img'></img>
+                    <h1 className='carousel-txt cleuton'>Totalmente gratuita e digital.</h1>
                     <FiChevronsDown className='chevrons'/>
                 </CarouselItem >
                 <CarouselItem interval={8000}>
                     <img src={Admissao}  className='carrossel-img'></img>
+                    <h1 className='carousel-txt admissao'>Processo de Admissão 2021/2022</h1>
                     <FiChevronsDown className='chevrons'/>
                 </CarouselItem >
                 <CarouselItem  interval={8000}>
                     <img src={Universidade} className='carrossel-img'></img>
+                    <h1 className='carousel-txt universidade'>Venha se graduar em nossa Faculdade.</h1>
                     <FiChevronsDown className='chevrons'/>
                 </CarouselItem>
             </Carousel>
