@@ -2,7 +2,6 @@
 
 .carrossel-img{
     width: 120vw;
-    margin-top: 100px;
 }
 .caneta-azul{
     height: 131px;
@@ -37,7 +36,7 @@
     display: flex;
     justify-content: space-around;
 }
-.item-menu{
+/* .item-menu{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,7 +44,7 @@
     color: white;
     font-size: 22px;
     cursor: pointer;
-}
+} */
 
 .about-us{
     display: none;
