@@ -5,11 +5,14 @@
   color: #fff;
 }
 
+.nav-wrapper {
+  background-color: #001489;
+}
+
 .nav {
   width: calc(100%-40px);
   height: 90px;
   padding: 0 20px;
-  background-color: #001489;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,7 +48,7 @@
 .menu {
   z-index: 100;
   width: 100%;
-  position:absolute ;
+  position:absolute;
   right: 0;
   padding: 0 20px;
   flex-direction: column;
@@ -87,14 +90,9 @@
   margin-left: 0px;
 }
 
-
-
 .admission {
   color: #F7BF0A; 
 }
-
-
-
 
 .menu-aberto.ret-top{
   transform: rotate(45deg) translate(10px,10px);
@@ -109,6 +107,7 @@
 .menu-aberto.ret-bottom{
   transform: rotate(-45deg) translate(5px, -5px);
 }
+
 
 
 .about-us-container, .collaborator-container {
@@ -133,22 +132,76 @@
 
 li > ul > li {
   width: 100%;
-  background-color: lightblue;
 }
 
 li > ul > li > a {
   min-width: 200px;
   font-size: 16px;
   cursor: pointer;
-  background-color: lawngreen;
 }
 
+a.menu-item {
+  text-decoration: none;
+  font-weight: 400;
+  color: white;
+}
 
-
-
-
-
+.submenu {
+  background-color: #2445FF;
+}
 
 .aberto {
   max-height: 1000px;
 }
+
+@media only screen and (min-width: 1050px) {
+  .nav-wrapper {
+    background-color: #001489;
+    display: flex;
+    justify-content: space-between;
+  }
+
+ .burguer-button {
+    display: none;
+  }
+
+
+  .menu {
+    position: static;
+    max-height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 60%;
+    margin: 0 20px 0 0;
+  }
+
+  .submenu {
+    margin-left: 0;
+    max-height: 0px;
+    position: absolute;
+    max-width: 125px;
+    height: fit-content;
+    border-radius: 0px 0 5px 5px;
+  }
+
+  .about-us-container:hover > .submenu {
+    max-height: 1000px;
+
+  }
+  
+  .collaborator-container:hover > .submenu {
+    max-height: 1000px;
+  }
+
+  
+
+  .menu-item {
+    height: fit-content;
+    width: fit-content;
+  }
+
+}
+
+
+

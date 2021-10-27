@@ -45,29 +45,55 @@ const Nav = ()=>{
                     <p className="menu-item">Doação</p>
                     <h1 class="hr"></h1>
                 </li>
-                <li className="menu-item">Contato</li>
-                <li className='menu-item about-us-container'>
+                <li>
+                    <p className="menu-item">Contato</p>
+                    <h1 class="hr"></h1>
+                </li>
+                <li className='about-us-container'>
                     <div onClick={toggleAboutClass} className="title-submenu">
-                        Sobre nós 
-                        <FiChevronRight/>
+                        <p className="menu-item">Sobre nós <FiChevronRight/></p>
+                        <h1 class="hr"></h1>
                     </div>
                     <ul className={`submenu ${aboutClassActual()}`}>
-                        <li className='submenu-item'><a href="#">Valores</a></li>
-                        <li className='submenu-item'><a href="#">Estágios</a></li>
-                        <li className='submenu-item'><a href="#">Certificados</a></li>
-                        <li className='submenu-item'><a href="#">Governança</a></li>
-                        <li className='submenu-item'><a href="#">Projeto Acadêmico</a></li>
+                        <li>
+                            <a className='menu-item' href="#">Valores</a>
+                            <h1 class="hr"></h1>
+                        </li>
+                        <li>
+                            <a className='menu-item' href="#">Estágios</a>
+                            <h1 class="hr"></h1>
+                        </li>
+                        <li>
+                            <a className='menu-item' href="#">Certificados</a>
+                            <h1 class="hr"></h1></li>
+                        <li>
+                            <a className='menu-item' href="#">Governança</a>
+                            <h1 class="hr"></h1>
+                        </li>
+                        <li>
+                            <a className='menu-item' href="#">Projeto Acadêmico</a>
+                            <h1 class="hr"></h1>
+                        </li>
                     </ul>  
                 </li>
-                <li onClick={toggleCollabClass} className='menu-item collaborator-container'>
-                    <div className="title-submenu">
-                        <><FaLock className='lock'/> Login </>
-                        <FiChevronRight/>
+                <li  className='collaborator-container'>
+                    <div onClick={toggleCollabClass} className="title-submenu">
+                        <p className="menu-item">Login <FiChevronRight/></p>
+                        <h1 class="hr"></h1>
                     </div>
                     <ul className={`submenu ${collabClassActual()}`}>
-                        <li className='submenu-item'>Minha biblioteca</li>
-                        <li className='submenu-item'>Agenda Edu</li>
-                        <li className='submenu-item'>Árvore de livros</li>
+                        <li>
+                            <a className='menu-item' href="#">Minha biblioteca</a>
+                            <h1 class="hr"></h1>
+                        </li>
+                        <li>
+                            <a className='menu-item' href="#">Agenda Edu</a>
+                            <h1 class="hr"></h1>
+                        </li>
+                        <li>
+                            <a className='menu-item' href="#">Árvore de livros</a>
+                            <h1 class="hr"></h1>
+                        </li>
                     </ul>    
                 </li>
             </ul>
