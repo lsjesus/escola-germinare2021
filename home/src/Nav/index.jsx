@@ -2,6 +2,7 @@ import './style.css'
 import logo from '../assets/logo-germinare.png'
 import {FiChevronRight} from 'react-icons/fi'
 import { useState } from 'react'
+import {FaLock} from 'react-icons/fa'
 
 const Nav = ()=>{
     const [isActive, setActive] = useState("true");
@@ -57,7 +58,6 @@ const Nav = ()=>{
                 <li className='about-us-container'>
                     <div onClick={toggleAboutClass} className="title-submenu">
                         <p className="menu-item">Sobre nós <FiChevronRight size={20} className={`chevron-right ${chevAboutClassActual()}`}/></p>
-                        <h1 class="hr"></h1>
                     </div>
                     <ul className={`submenu ${aboutClassActual()}`}>
                         <li>
@@ -83,8 +83,7 @@ const Nav = ()=>{
                 </li>
                 <li  className='collaborator-container'>
                     <div onClick={toggleCollabClass} className="title-submenu">
-                        <p className="menu-item">Login <FiChevronRight size={20} className={`chevron-right ${chevCollabClassActual()}`}/></p>
-                        <h1 class="hr"></h1>
+                        <p className="menu-item"><FaLock size={12} className="lock-icon"/> Login <FiChevronRight size={20} className={`chevron-right ${chevCollabClassActual()}`}/></p>
                     </div>
                     <ul className={`submenu ${collabClassActual()}`}>
                         <li>

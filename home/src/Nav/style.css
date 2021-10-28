@@ -86,6 +86,8 @@
   z-index: 101;
   transition: all 0.3s ease-in-out;
 }
+
+
 .menu-item:hover ~ .hr{
   border-color: #8284ff;
   margin-left: 0px;
@@ -144,6 +146,9 @@ li > ul > li > a {
   cursor: pointer;
 }
 
+.lock-icon {
+  margin-right: 5px;
+}
 
 
 a.menu-item {
@@ -163,7 +168,7 @@ a.menu-item {
 p.menu-item {
   display: flex;
   align-items: center;
-
+  justify-content: center;
 }
 
 .chevron-right {
