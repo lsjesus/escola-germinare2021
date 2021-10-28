@@ -18,8 +18,12 @@
   align-items: center;
 }
 
-.logo {
+.logo-wrapper {
   height: 50%;
+}
+
+.logo {
+  height: 100%;
 }
 
 .burguer-button {
@@ -61,13 +65,15 @@
 }
 
 .menu >li {
+  
   padding: 5px;
+  padding-left: 40px;
   border-radius: 2px 5px;
-  max-width:200px;
+  width: fit-content;
   cursor: pointer;
   font-size: 20;
   font-weight: 700;
-
+  cursor: context-menu;
   transition: all .3s ease-in-out;
 }
 
@@ -88,10 +94,6 @@
 .admission.menu-item:hover ~ .hr{
   border-color: #ab8200;
   margin-left: 0px;
-}
-
-.admission {
-  color: #F7BF0A; 
 }
 
 .menu-aberto.ret-top{
@@ -124,9 +126,11 @@
   overflow:hidden;
   max-height: 0px;
   transition: max-height 1s ease-in-out;
+  cursor: context-menu;
 }
 
 .title-submenu {
+  width: fit-content;
   cursor: pointer;
 }
 
@@ -140,21 +144,43 @@ li > ul > li > a {
   cursor: pointer;
 }
 
+
+
 a.menu-item {
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 500;
   color: white;
 }
 
-.submenu {
-  background-color: #2445FF;
+.menu > li > a {
+  font-weight: 700;
 }
+
+.menu > li > .admission {
+  color: #F7BF0A; 
+}
+
+p.menu-item {
+  display: flex;
+  align-items: center;
+
+}
+
+.chevron-right {
+  transition: all 0.2s ease-in-out;
+}
+
+.turned {
+  transform: rotate(90deg)
+}
+
 
 .aberto {
   max-height: 1000px;
 }
 
-@media only screen and (min-width: 1050px) {
+@media only screen and (min-width: 1000px) {
+
   .nav-wrapper {
     background-color: #001489;
     display: flex;
@@ -173,7 +199,12 @@ a.menu-item {
     flex-direction: row;
     align-items: center;
     width: 60%;
-    margin: 0 20px 0 0;
+    margin: 0 40px 0 0;
+    justify-content: space-between;
+  }
+
+  .menu >li {
+    padding: 0;
   }
 
   .submenu {
@@ -183,6 +214,19 @@ a.menu-item {
     max-width: 125px;
     height: fit-content;
     border-radius: 0px 0 5px 5px;
+    background-color: #2445FF;
+  }
+
+  .title-submenu {
+    cursor: context-menu;
+  }
+
+  .about-us-container:hover .chevron-right {
+    transform: rotate(90deg)
+  }
+
+  .collaborator-container:hover .chevron-right {
+    transform: rotate(90deg)
   }
 
   .about-us-container:hover > .submenu {

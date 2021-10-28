@@ -1,35 +1,40 @@
 import './style.css'
 import logo from '../assets/logo-germinare.png'
-import {FiChevronsDown} from 'react-icons/fi'
-import{FaLock} from 'react-icons/fa'
 import {FiChevronRight} from 'react-icons/fi'
-import {AiOutlineMenu} from 'react-icons/ai'
 import { useState } from 'react'
 
 const Nav = ()=>{
     const [isActive, setActive] = useState("true");
     const [isMenuActive, setMenuActive] = useState("true");
     const [isAboutActive, setAboutActive] = useState("true");
+    const [isChevAboutActive, setChevAboutActive] = useState("true");
     const [isCollabActive, setCollabActive] = useState("true");
+    const [isChevCollabActive, setChevCollabActive] = useState("true");
     
     const ToggleClass = () => {
-        if (!isAboutActive) {toggleAboutClass()}
-        if (!isCollabActive) {toggleCollabClass()}
+        if (!isAboutActive) {toggleAboutClass()};
+        if (!isCollabActive) {toggleCollabClass()};
         setActive(!isActive);
         setMenuActive(!isMenuActive);}
     const classActual = ()=>{return !isActive ? "aberto" : "null"};
     const menuActualClass = () => {return !isMenuActive ? "menu-aberto" : "null"}
 
-    const toggleAboutClass = () => {setAboutActive(!isAboutActive);};
+    const toggleAboutClass = () => {
+        setChevAboutActive(!isChevAboutActive);
+        setAboutActive(!isAboutActive);};
     const aboutClassActual = ()=>{return !isAboutActive ? "aberto" : "null"};
+    const chevAboutClassActual = ()=>{return !isChevAboutActive ? "turned" : "null"};
 
-    const toggleCollabClass = () => {setCollabActive(!isCollabActive);};
+    const toggleCollabClass = () => {
+        setChevCollabActive(!isChevCollabActive);
+        setCollabActive(!isCollabActive);};
     const collabClassActual = ()=>{return !isCollabActive ? "aberto" : "null"};
+    const chevCollabClassActual = ()=>{return !isChevCollabActive ? "turned" : "null"};
 
     return(
         <div className="nav-wrapper">
             <div className='nav'>
-                <img src={logo} alt="Logo Escola Germinare" className='logo'/>
+                <a href="#" className="logo-wrapper"><img src={logo} alt="Logo Escola Germinare" className="logo"/></a>
                 <button className="burguer-button" onClick={ToggleClass}>
                     <div className={`hamburguer-menu ${menuActualClass()} ret-top`}></div>
                     <div className={`hamburguer-menu ${menuActualClass()} ret-middle`}></div>
@@ -38,20 +43,20 @@ const Nav = ()=>{
             </div>
             <ul className={`menu ${classActual()}`}>
                 <li>
-                    <p className="menu-item admission">Admissão 2021/2022</p>
+                    <a href="#" className="menu-item admission">Admissão 2021/2022</a>
                     <h1 class="hr"></h1>
                 </li>
                 <li>
-                    <p className="menu-item">Doação</p>
+                    <a href="#" className="menu-item">Doação</a>
                     <h1 class="hr"></h1>
                 </li>
                 <li>
-                    <p className="menu-item">Contato</p>
+                    <a href="#" className="menu-item">Contato</a>
                     <h1 class="hr"></h1>
                 </li>
                 <li className='about-us-container'>
                     <div onClick={toggleAboutClass} className="title-submenu">
-                        <p className="menu-item">Sobre nós <FiChevronRight/></p>
+                        <p className="menu-item">Sobre nós <FiChevronRight size={20} className={`chevron-right ${chevAboutClassActual()}`}/></p>
                         <h1 class="hr"></h1>
                     </div>
                     <ul className={`submenu ${aboutClassActual()}`}>
@@ -78,7 +83,7 @@ const Nav = ()=>{
                 </li>
                 <li  className='collaborator-container'>
                     <div onClick={toggleCollabClass} className="title-submenu">
-                        <p className="menu-item">Login <FiChevronRight/></p>
+                        <p className="menu-item">Login <FiChevronRight size={20} className={`chevron-right ${chevCollabClassActual()}`}/></p>
                         <h1 class="hr"></h1>
                     </div>
                     <ul className={`submenu ${collabClassActual()}`}>
