@@ -1,183 +1,147 @@
-@import url('./formatCarousel.css');
+.about-our-school {
+    width: calc(100%-40px);
+    padding: 0 20px;
+}
 
-.carrossel-img{
-    width: 120vw;
-    margin-top: 100px;
+.about-our-school > .data-content-wrapper-about-us {
+    display: none;
 }
-.caneta-azul{
-    height: 131px;
-    background-color: #A4A5FF;
-    margin-top: -14px;
-    background-image: url('../assets/fundo-germinare.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-.header{
-    z-index: 100;
-    width: 100%;
+
+.top-content {
     display: flex;
-    position: absolute;
+    flex-direction: column-reverse;
+}
+
+.text-content-wrapper > p {
+    margin: 15px 0 -5px 0;
+    font-size: 0.9rem;
+}
+
+.classroom-img {
+    max-height: 269px;
+    max-width: 506px;
+    border-radius: 2px;
+}
+
+.top-content-text > img {
+    display: none;
+}
+
+
+.top-content-text > h1 {
+    text-transform:uppercase;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #001489;
+}
+
+.top-content-text > p {
+    margin: 15px 0;
+    font-size: 1rem;
+}
+
+.data-content-wrapper-about-us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.data-content-wrapper-about-us {
+    margin: 20px 0;
+}
+
+.data-content-wrapper-about-us > div {
+    width: 40%;
+    height: 170px;
+    display: flex;
     align-items: center;
-    background: #001489;
-    height: 134px;
-    padding: 38px 26px;
-    box-shadow: 5px 5px 25px rgb(12, 1, 65);
-    display: none;
-
-}
-.logo{
-    height: 65px;
-}
-.navigation{
-    margin-left: auto;
-    width: 68%;
-}
-.menu{
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-}
-.item-menu{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    color: white;
-    font-size: 22px;
-    cursor: pointer;
-}
-
-.about-us{
-    display: none;
-}
-.collaborator{
-    display: none;
-}
-.line{
-    width: 40px;
-    margin: 0;
-    margin-left: 555px;
-    height: .5s;
-    border-top: 3px solid transparent;
-}
-.lock{
-    margin-right: 8px;
-    margin-bottom: 4px;
-}
-.admissao{
-    color: #F7BF0A; 
-    font-weight: 800; 
-    /* border: 3px solid;
-    border-radius: 10px;
-    padding: 10px; */
-    cursor: pointer;
-    font-size: 23px;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: baseline;
+    flex-direction: column;
+    margin-top: 10px;
+    vertical-align: top;
 }
-.chevrons{
-    position: absolute;
-    z-index: 10;
-    top: auto;
-    display: block;
-    left: 50%;
-    right: 50%;
-    bottom: 0;
-    font-size: 50px;
-    color: white;
-    margin-bottom: 45px;
-    animation: fade-slide-up 1s 1s ease-out forwards,
-    pulse 2s 3s ease-out infinite;
-    opacity: 0;
-    cursor: pointer;
+
+.data-content-wrapper-about-us > div > h1 {
+    color: #001489;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 5px 0;
 }
-@keyframes fade-slide-down {
-    0% {
-      opacity: 0;
-      transform: translateY(-4rem);
-    }
-    100% {
-      opacity: 1;
-      transform: none;
-    }
-  }
-  
-  @keyframes fade-slide-up {
-    0% {
-      opacity: 0;
-      transform: translateY(4rem);
-    }
-    100% {
-      opacity: 1;
-      transform: none;
-    }
-  }
-  
-  @keyframes pop-in {
-    0% {
-      opacity: 0;
-      transform: translateY(-4rem) scale(.8);
-    }
-    100% {
-      opacity: 1;
-      transform: none;
-    }
-  }
-  
-  @keyframes pulse {
-    0% {
-      opacity: 1;
-      transform: none;
-    }
-    50% {
-      opacity: .8;
-      transform: scale(.8);
-    }
-    100% {
-      opacity: 1;
-      transform: none;
-    }
-  }
-@media only screen and (min-width: 1400px) {
-    .chevrons {
-      font-size: 75px;
-     
-    }
-    .item-menu{
-        font-size: 30px;
-    }
-  }
-@media only screen and (max-width: 605px){
-  .chevrons{
-    font-size: 30px;
-    margin-bottom: 10px;
-  }
+
+.data-content-wrapper-about-us > div > p {
+    font-size: 0.8rem;
 }
-@media only screen and (min-height: 500px){
-  .chevrons{
-    margin-bottom: 65px;
-  }
+
+
+@media (min-width:460px) {
+    .data-content-wrapper-about-us > div > h1 {
+        font-size: 1.3rem;
+    }
+
+    .data-content-wrapper-about-us > div > p {
+        font-size: .95rem;
+    }
 }
-.carousel-txt{
-  position: absolute;
-  width: auto;
-  max-width: 729px;
-  top: 300px;
-  left: 80px;
-  color: #FFFFFF;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 60px;
+
+
+@media (min-width:550px) and (max-width:700px) {
+    .top-content > img {
+        padding: 0 76.5px;
+    }
 }
-.cleuton{
-  max-width: 629px;
+
+
+@media only screen and (min-width: 700px) {
+
+    .data-content-wrapper-about-us > div > h1 {
+        font-size: 1.35rem;
+    }
+
+    .data-content-wrapper-about-us > div > p {
+        font-size: 1.03rem;
+    }
+
+    .top-content-text > .data-content-wrapper-about-us {
+        display: none;
+    }
+    .about-our-school > .data-content-wrapper-about-us {
+        display: flex;
+    }
+
+    .top-content {
+        flex-direction: row;
+    }
+
+    .top-content > img {
+        display: none;
+    }
+
+    .top-content-text > img {
+        display: block;
+    }
+
+    .classroom-img {
+        width: 45%;
+        float: left;
+        margin-right: 15px;
+    }
+
+    .top-content-text > p {
+        font-size: 1.1rem;
+    }
+
+    .data-content-wrapper-about-us > div {
+        width: 20%;
+    } 
 }
-.admissao{
-  max-width: 429px;
-  text-align: left;
-}
-.universidade{
-  max-width: 629px;
+
+@media (min-width:1080px) {
+    .top-content-text > h1 {
+        font-size: 2.1rem;
+    }
+
+    .top-content-text > p {
+        font-size: 1.3rem;
+    }
 }
