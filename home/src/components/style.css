@@ -2,3 +2,76 @@
     width: calc(100%-40px);
     padding: 0 20px;
 }
+
+.come-make-history > div {
+    display: flex;
+}
+
+.first-content-container > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.first-content-container > img {
+    max-height: 158px;
+    margin: 0 10px 0 0;
+}
+
+.first-content-container > div > h1 {
+    line-height: 112.5%;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #001489; 
+}
+
+.first-content-container > div > p {
+    line-height: 125%;
+    font-size: 0.625rem;
+    margin: 10px 0;
+}
+
+.come-make-history > div > div > a {
+    align-self: center;
+    text-align: center;
+    padding: 5% 10%;
+    width: fit-content;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;   
+    color: white;
+    background-color: #0A2EEF;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.second-content-container {
+    margin: 0 -20px;
+    margin-top: 10px;
+    height: fit-content;
+    padding: 10% 20px;
+    background-color: #6668DA;
+    color: white;
+    justify-content: space-between;
+}
+
+.second-content-container > div {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    width: 45%;
+}
+
+.second-content-container > div > h1 {
+    font-size: 0.875rem;
+    font-weight: bold;
+    min-height: 28px;
+}
+
+.second-content-container > div > p {
+    font-size: 0.625rem;
+    min-height: 30px;
+}
