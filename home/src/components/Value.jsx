@@ -2,8 +2,14 @@ import './style.css'
 import valueImg from '../assets/joao-neto.png'
 
 const Value = ()=>{
-    return(
+    return(      
         <section className="value">
+            <div className="header">
+                <p className="track-text">
+                    <a  className="track-home">Home</a>/ Valores
+                </p>
+                <h1 className="title">Valores</h1>
+            </div>
             <img src={valueImg} alt="" />
             <fieldset>
                 <legend className="atitude-de-dono">Atitude de dono</legend>
