@@ -12,30 +12,30 @@
     flex-direction: column;
 }
 
-.first-content-container > img {
-    max-height: 158px;
-    margin: 0 10px 0 0;
+.first-content-container > picture {
+    margin-right: 10px;
 }
 
 .first-content-container > div > h1 {
     line-height: 112.5%;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     font-weight: bold;
     color: #001489; 
 }
 
 .first-content-container > div > p {
     line-height: 125%;
-    font-size: 0.625rem;
+    /* font-size: 0.625rem; */
     margin: 10px 0;
 }
 
 .come-make-history > div > div > a {
     align-self: center;
     text-align: center;
-    padding: 5% 10%;
+    padding:  clamp(15px,5%, 30px) 10%;
     width: fit-content;
-    font-size: 0.75rem;
+    text-decoration: none;
+    /* font-size: 0.75rem; */
     font-weight: bold;
     text-align: center;
     vertical-align: middle;   
@@ -66,12 +66,74 @@
 }
 
 .second-content-container > div > h1 {
-    font-size: 0.875rem;
+    /* font-size: 0.875rem; */
     font-weight: bold;
     min-height: 28px;
 }
 
 .second-content-container > div > p {
-    font-size: 0.625rem;
+    /* font-size: 0.625rem; */
     min-height: 30px;
+}
+
+
+
+/* Tamanho de fontes responsivo */
+
+.come-make-history > div > div > p {
+    font-size: 10px;
+}
+.second-content-container > div > p {
+    margin: 10px 0;
+}
+.first-content-container > div > h1 {
+    font-size: 16px;
+}
+.come-make-history > div > div > a {
+    font-size: 12px;
+}
+.second-content-container > div > h1 {
+    font-size: 14px;
+}
+
+@media (min-width: 320px) {
+    .first-content-container > picture {
+        margin-right: calc(10px + 30 * ((100vw - 320px) / 760));
+    }
+    .come-make-history > div > div > p {
+        font-size: calc(10px + 12 * ((100vw - 320px) / 760));
+    }
+    .second-content-container > div > p {
+        margin: calc(10px + 20 * ((100vw - 320px) / 760)) 0;
+    }
+    .first-content-container > div > h1 {
+        font-size: calc(16px + 16 * ((100vw - 320px) / 760));
+    }
+    .come-make-history > div > div > a {
+        font-size: calc(12px + 12 * ((100vw - 320px) / 760));
+    }
+    .second-content-container > div > h1 {
+        font-size: calc(14px + 14 * ((100vw - 320px) / 760));
+    }
+}
+
+@media (min-width: 1080px) {
+    .first-content-container > picture {
+        margin-right: 40px;
+    }
+    .come-make-history > div > div > p {
+        font-size: 22px;
+    }
+    .second-content-container > div > p {
+        margin: 30px 0;
+    }
+    .first-content-container > div > h1 {
+        font-size: 32px;
+    }
+    .come-make-history > div > div > a {
+        font-size: 24px;
+    }
+    .second-content-container > div > h1 {
+        font-size: 28px;
+    }
 }
