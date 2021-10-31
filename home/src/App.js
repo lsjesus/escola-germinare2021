@@ -1,9 +1,9 @@
-import ComeMakeHistory from "./components/ComeMakeHistory";
+import Value from "./components/Value";
 import './styles/global.css'
 function App() {
   return (
     <div className="App">
-      <ComeMakeHistory/>
+      <Value/>
     </div>
   );
 }
