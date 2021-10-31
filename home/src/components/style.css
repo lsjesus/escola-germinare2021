@@ -1,10 +1,10 @@
+#root {
+    --screen-size: ((100vw - 320px) / 760)
+}
+
 .about-our-school {
     width: calc(100%-40px);
     padding: 0 20px;
-}
-
-.about-our-school > .data-content-wrapper-about-us {
-    display: none;
 }
 
 .top-content {
@@ -12,32 +12,28 @@
     flex-direction: column-reverse;
 }
 
-.text-content-wrapper > p {
-    margin: 15px 0 -5px 0;
-    font-size: 0.9rem;
-}
-
 .classroom-img {
-    max-height: 269px;
-    max-width: 506px;
+    margin-top: 10px;
+    height: clamp(149px, calc(149px + 120*var(--screen-size)), 269px);
+    width: clamp(280px, calc(280px + 226*var(--screen-size)), 506px);
     border-radius: 2px;
+    align-self: center;
 }
 
 .top-content-text > img {
     display: none;
 }
 
-
 .top-content-text > h1 {
     text-transform:uppercase;
     font-weight: 700;
-    font-size: 1.8rem;
+    font-size: clamp(16px, calc(16px + 16*var(--screen-size)), 32px);
     color: #001489;
 }
 
-.top-content-text > p {
-    margin: 15px 0;
-    font-size: 1rem;
+.top-content-text > p, .about-our-school > p{
+    margin-top: 10px;
+    font-size: clamp(10px, calc(10px + 12*var(--screen-size)), 22px);
 }
 
 .data-content-wrapper-about-us {
@@ -52,7 +48,7 @@
 
 .data-content-wrapper-about-us > div {
     width: 40%;
-    height: 170px;
+    height: fit-content;
     display: flex;
     align-items: center;
     text-align: center;
@@ -62,46 +58,28 @@
     vertical-align: top;
 }
 
+.data-content-wrapper-about-us > div > img:not(.student-reading) {
+    width: 60%;
+}
+
+.student-reading {
+    width: 45%;
+}
+
 .data-content-wrapper-about-us > div > h1 {
     color: #001489;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: clamp(14px, calc(14px + 14*var(--screen-size)), 28px);
     margin: 5px 0;
+    white-space: nowrap;
+
 }
 
 .data-content-wrapper-about-us > div > p {
-    font-size: 0.8rem;
+    font-size: clamp(8px, calc(8px + 10*var(--screen-size)), 18px);
 }
-
-
-@media (min-width:460px) {
-    .data-content-wrapper-about-us > div > h1 {
-        font-size: 1.3rem;
-    }
-
-    .data-content-wrapper-about-us > div > p {
-        font-size: .95rem;
-    }
-}
-
-
-@media (min-width:550px) and (max-width:700px) {
-    .top-content > img {
-        padding: 0 76.5px;
-    }
-}
-
 
 @media only screen and (min-width: 700px) {
-
-    .data-content-wrapper-about-us > div > h1 {
-        font-size: 1.35rem;
-    }
-
-    .data-content-wrapper-about-us > div > p {
-        font-size: 1.03rem;
-    }
-
     .top-content-text > .data-content-wrapper-about-us {
         display: none;
     }
@@ -115,33 +93,21 @@
 
     .top-content > img {
         display: none;
+
     }
 
     .top-content-text > img {
         display: block;
+        margin-top: 0;
     }
 
     .classroom-img {
-        width: 45%;
         float: left;
         margin-right: 15px;
     }
 
-    .top-content-text > p {
-        font-size: 1.1rem;
-    }
-
     .data-content-wrapper-about-us > div {
         width: 20%;
+        height: fit-content;
     } 
-}
-
-@media (min-width:1080px) {
-    .top-content-text > h1 {
-        font-size: 2.1rem;
-    }
-
-    .top-content-text > p {
-        font-size: 1.3rem;
-    }
 }
