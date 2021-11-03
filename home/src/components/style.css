@@ -4,8 +4,9 @@
 }
 
 .first-content-container > picture {
-    max-width:200px;
-    max-height: 300px;
+    max-width:calc(100px + 30 * ((100vw - 320px) / 400));
+    max-height: calc(200px + 30 * ((100vw - 320px) / 400));
+
 }
 
 .first-content-container > picture > img{
@@ -62,14 +63,14 @@
     margin: 0 -20px;
     margin-top: 10px;
     height: fit-content;
-    padding: 10% 20px;
+    padding: 20px 20px;
     background-color: #6668DA;
     color: white;
     justify-content: space-between;
 }
 
 .second-content-container > div {
-    height: 100px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     text-align: center;
