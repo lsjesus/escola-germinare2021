@@ -1,9 +1,9 @@
-import Nav from "./Nav"
+import AcademicProject from "./AcademicProject"
 import './styles/global.css'
 function App() {
   return (
     <div className="App">
-      <Nav/>
+      <AcademicProject/>
     </div>
   );
 }
