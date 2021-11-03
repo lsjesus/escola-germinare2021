@@ -12,6 +12,10 @@
     flex-direction: column-reverse;
 }
 
+.text-at-the-top {
+    display: none;
+}
+
 .classroom-img {
     margin-top: 10px;
     height: clamp(149px, calc(149px + 120*var(--screen-size)), 269px);
@@ -110,4 +114,19 @@
         width: 20%;
         height: fit-content;
     } 
+}
+
+@media screen and (min-width:800px)  {
+    .text-at-the-top {
+        display: block;
+    }
+
+    .text-at-the-bottom {
+        display: none;
+    }
+
+    .classroom-img {
+        float: left;
+    }
+    
 }

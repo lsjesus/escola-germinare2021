@@ -17,10 +17,13 @@ const AboutOurSchool = ()=>{
                     <h1>Sobre a nossa escola</h1>
                     <p>
                         A Escola de Negócios Germinare é uma entidade sem fins lucrativos voltada a alunos do 6º ano do Ensino Fundamental II ao 3º ano do Ensino Médio  e oferece ensino integral gratuito a todos os alunos. Além das aulas, os alunos recebem uniforme, material didático e refeições totalmente gratuitas.
+                    </p>
+                    <p className="text-at-the-top">
+                        Ao concluir o Ensino Médio, os alunos recebem dois diplomas, sendo eles: Diploma de Ensino Médio e Diploma de Técnico em Administração de empresas. 
                     </p>                   
                 </div>
             </div>
-            <p>
+            <p className="text-at-the-bottom">
                 Ao concluir o Ensino Médio, os alunos recebem dois diplomas, sendo eles: Diploma de Ensino Médio e Diploma de Técnico em Administração de empresas. 
             </p>
             <div className="data-content-wrapper-about-us">  
