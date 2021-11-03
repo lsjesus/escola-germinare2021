@@ -63,11 +63,11 @@
 }
 
 .data-content-wrapper-about-us > div > img:not(.student-reading) {
-    width: 60%;
+    width: 45%;
 }
 
 .student-reading {
-    width: 45%;
+    width: 30%;
 }
 
 .data-content-wrapper-about-us > div > h1 {
