@@ -31,13 +31,13 @@
 .top-content-text > h1 {
     text-transform:uppercase;
     font-weight: 700;
-    font-size: clamp(16px, calc(16px + 16*var(--screen-size)), 32px);
+    font-size: clamp(24px, calc(24px + 8*var(--screen-size)), 32px);
     color: #001489;
 }
 
 .top-content-text > p, .about-our-school > p{
     margin-top: 10px;
-    font-size: clamp(10px, calc(10px + 12*var(--screen-size)), 22px);
+    font-size: clamp(16px, calc(16px + 6*var(--screen-size)), 22px);
 }
 
 .data-content-wrapper-about-us {
@@ -73,14 +73,14 @@
 .data-content-wrapper-about-us > div > h1 {
     color: #001489;
     font-weight: 700;
-    font-size: clamp(14px, calc(14px + 14*var(--screen-size)), 28px);
+    font-size: clamp(18px, calc(18px + 10*var(--screen-size)), 28px);
     margin: 5px 0;
     white-space: nowrap;
 
 }
 
 .data-content-wrapper-about-us > div > p {
-    font-size: clamp(8px, calc(8px + 10*var(--screen-size)), 18px);
+    font-size: clamp(12px, calc(12px + 6*var(--screen-size)), 18px);
 }
 
 @media only screen and (min-width: 700px) {
