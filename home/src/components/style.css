@@ -109,8 +109,5 @@
     .first-content-container > picture {
         max-width:calc(300px + 80 * ((100vw - 720px) / 360));
         max-height: calc(260px + 80 * ((100vw - 720px) / 360));
-
-        
     }
-    
 }
