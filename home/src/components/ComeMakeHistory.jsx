@@ -1,14 +1,17 @@
 import './style.css'
-import studentLooking from '../assets/studentLooking.png'
-import studentLookingBigger from '../assets/studentLookingBigger.png'
+import studentLooking from '../assets/student-looking.png'
+import studentLookingSmall from '../assets/student-looking-small.png'
+
+
 const ComeMakeHistory = ()=>{
     return(
         <section className="come-make-history">
             <div className="first-content-container">
                 <picture>
-                    <source media="(min-width:650px)" srcset={studentLookingBigger}/>
+                    <source media="(max-width:720px)" srcset={studentLookingSmall}/>
                     <img src={studentLooking} alt="" />
                 </picture>
+                
                 <div>
                     <h1>Venha fazer parte da nossa história!</h1>
                     <p>A Escola Germinare forma jovens líderes de negócios de alta performance preparados para a sociedade e o mercado de trabalho. Participe do processo de admissão 2021/2022.</p>
