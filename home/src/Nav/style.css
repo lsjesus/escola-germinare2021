@@ -1,10 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
-
-* {
-  font-family: 'Montserrat', sans-serif;
-  color: #fff;
-}
-
 .nav-wrapper {
   background-color: #001489;
   position: absolute;
@@ -12,6 +5,7 @@
   width: 100%;
   box-shadow: 5px 5px 25px rgb(12, 1, 65);
   z-index: 98;
+  color: #fff;
 }
 
 .nav {
@@ -70,7 +64,6 @@
 }
 
 .menu >li {
-  
   padding: 5px;
   padding-left: 40px;
   border-radius: 2px 5px;
@@ -91,7 +84,6 @@
   z-index: 101;
   transition: all 0.3s ease-in-out;
 }
-
 
 .menu-item:hover ~ .hr{
   border-color: #8284ff;
@@ -116,8 +108,6 @@
 .menu-aberto.ret-bottom{
   transform: rotate(-45deg) translate(5px, -5px);
 }
-
-
 
 .about-us-container, .collaborator-container {
   flex-direction: column;
@@ -154,7 +144,6 @@ li > ul > li > a {
 .lock-icon {
   margin-right: 5px;
 }
-
 
 a.menu-item {
   text-decoration: none;
@@ -200,7 +189,6 @@ p.menu-item {
  .burguer-button {
     display: none;
   }
-
 
   .menu {
     position: static;
