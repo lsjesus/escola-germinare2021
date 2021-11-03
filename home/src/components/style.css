@@ -5,7 +5,7 @@
 
 .first-content-container > picture {
     max-width:calc(100px + 30 * ((100vw - 320px) / 400));
-    max-height: calc(200px + 30 * ((100vw - 320px) / 400));
+    max-height: calc(160px + 30.5 * ((100vw - 320px) / 400));
 
 }
 
@@ -108,7 +108,7 @@
 @media (min-width: 720px) {
     .first-content-container > picture {
         max-width:calc(300px + 80 * ((100vw - 720px) / 360));
-        max-height: calc(240px + 80 * ((100vw - 720px) / 360));
+        max-height: calc(260px + 80 * ((100vw - 720px) / 360));
 
         
     }
