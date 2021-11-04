@@ -1,28 +1,45 @@
-.dicipline-container-wrapper {
-    display: flex;
-    max-width: 1080px;
+.academic-project {
+    width: calc(100%-40px);
+    padding: 0 20px;
+}
 
+.dicipline-container-wrapper {
+    margin: 0 auto;
+    max-width: 1040px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px 15px;
 }
 
 .discipline-container {
     border: solid 2px #2E3092;
     border-radius: 5px;
-    width: 140px;
     height: 194px;
+    width: 136px;
 
 }
 
 .discipline-container > h1 {
-    font-size: 1rem;
+    font-size: 16.61px;
+    height: 40px;
+    padding: 6px 3px 3px 3px;
 }
 
 .discipline-container > hr {
     border: 1px solid #5E61E6;
+    margin: 0;
 }
 
 .discipline-container > ul {
     list-style-type: disc;
-    background-color: aqua;
-    font-size: 0.75rem;
+    line-height: 125%;
+    font-size: 13px;
+    margin: 5px 0 0 20px;
+    word-wrap: normal;
+    padding-right: 5px;
+
 } 
+
+
 

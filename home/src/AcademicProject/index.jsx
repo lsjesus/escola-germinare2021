@@ -2,13 +2,12 @@ import './style.css'
 
 const AcademicProject = ()=>{
     return (
-        <>
+        <section className="academic-project">
             <p>
                 A escola Germinare tem como missão formar jovens administradores de empresas e cidadãos por meio de uma educação única e inteiramente gratuita. É uma instituição aprovada pelo MEC – Ministério da Educação – e reconhecida pela UNESCO.
                 O foco principal é formar de maneira efetiva jovens gestores e líderes para o mercado de trabalho, oferecendo ampla preparação com conteúdos dirigidos ao desenvolvimento de habilidades profissionais e a oportunidade de especialização escolhida entre os seguintes negócios: digital, financeiro, varejo, commodities e bens de consumo.
                 Disciplinas distribuídas em áres de conhecimento e academias:
             </p>
-
             <div className="dicipline-container-wrapper">
                 <div className="discipline-container">
                     <h1>Linguagens e códigos</h1>
@@ -30,49 +29,85 @@ const AcademicProject = ()=>{
                     </ul>
                 </div>
                 <div className="discipline-container">
-                    <h1></h1>
+                    <h1>Ciências da Natureza</h1>
                     <hr />
-                    <ul></ul>
+                    <ul>
+                        <li>Ciências</li>
+                        <li>Biologia</li>
+                        <li>Física</li>
+                        <li>Química</li>
+                        <li>Pessoas</li>
+                        <li>Orientação de Estudos</li>
+                    </ul>
                 </div>
                 <div className="discipline-container">
-                    <h1></h1>
+                    <h1>Ciências Humanas</h1>
                     <hr />
-                    <ul></ul>
+                    <ul>
+                        <li>Geografia</li>
+                        <li>História</li>
+                        <li>Filosofia</li>
+                        <li>Sociologia</li>
+                    </ul>
                 </div>
                 <div className="discipline-container">
-                    <h1></h1>
+                    <h1>Controladoria</h1>
                     <hr />
-                    <ul></ul>
+                    <ul>
+                        <li>Contabilidade</li>
+                        <li>Fiscal</li>
+                        <li>Jurídico</li>
+                        <li>Infomática</li>
+                    </ul>
                 </div>
                 <div className="discipline-container">
-                    <h1></h1>
+                    <h1>Mercado de Capitais</h1>
                     <hr />
-                    <ul></ul>
+                    <ul>
+                        <li>Mercado de Capitais</li>
+                    </ul>
                 </div>
                 <div className="discipline-container">
-                    <h1></h1>
+                    <h1>Academia Seara/Flora</h1>
                     <hr />
-                    <ul></ul>
+                    <ul>
+                        <li>Arte/Marketing/<wbr/>Marcas</li>
+                    </ul>
                 </div>
                 <div className="discipline-container">
-                    <h1></h1>
+                    <h1>Academia Original</h1>
                     <hr />
-                    <ul></ul>
+                    <ul>
+                        <li>Gestão de Portfólio</li>
+                        <li>Crédito Pessoa Física</li>
+                        <li>Crédito Pessoa Jurídica</li>
+                        <li>Seguros</li>
+                    </ul>
                 </div>
                 <div className="discipline-container">
-                    <h1></h1>
+                    <h1>Academia PicPay</h1>
                     <hr />
-                    <ul></ul>
+                    <ul>
+                        <li>Tecnologia da Informação - TI</li>
+                        <li>Experiência do Usuário - UX</li>
+                    </ul>
                 </div>
                 <div className="discipline-container">
-                    <h1></h1>
+                    <h1>Academia Friboi</h1>
                     <hr />
-                    <ul></ul>
+                    <ul>
+                        <li>Adminsitração Comercial</li>
+                        <li>Planejamento e Produção</li>
+                    </ul>
                 </div>
                 <div className="discipline-container">
-                    <h1></h1>
+                    <h1>Academia Swift</h1>
                     <hr />
-                    <ul></ul>
+                    <ul>
+                        <li>Atendimento ao Cliente</li>
+                        <li>Varejo</li>
+                        <li>Vendas B2B</li>
+                    </ul>
                 </div>   
             </div>
 
@@ -82,7 +117,7 @@ const AcademicProject = ()=>{
                 A partir do ano de 2015, o Ensino Médio tornou-se técnico. Assim, os alunos, ao término do 3º ano do Ensino Médio, receberão um certificado de Técnico em Administração de empresas.
             </p>
 
-        </>
+        </section>
     )
 }
 export default AcademicProject
