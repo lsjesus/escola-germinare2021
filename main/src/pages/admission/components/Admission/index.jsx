@@ -1,12 +1,13 @@
 import alunos from '../../assets/alunos.png'
 import './style.css'
 import { Header } from './Header'
+import { Link } from 'react-router-dom'
 const Main = ()=>{
     return(
         <>
         <Header>
             <p>
-                <a href="#">Home</a>/ Processo de Admissão 2021/2022
+                <Link to='/'>Home</Link>/ Processo de Admissão 2021/2022
             </p>
             <h1>Processo de Admissão 2021/2022</h1>
         </Header> 
