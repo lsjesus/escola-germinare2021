@@ -7,6 +7,7 @@ const ComeMakeHistory = ()=>{
     return(
         <section className="come-make-history">
             <div className="first-content-container">
+                <img src={studentLooking} alt="" />
                 <div>
                     <h1>Venha fazer parte da nossa história!</h1>
                     <img src={studentLooking} alt="" />

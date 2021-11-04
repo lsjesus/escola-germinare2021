@@ -10,9 +10,13 @@
     text-align: center;
 }
 
+.first-content-container  > img {
+    display: none;
+}
+
 .first-content-container > div > img {
-    width: 100%;
-    margin: 0 auto;
+    width: 75%;
+    margin: 10px auto;
 }
 
 .first-content-container > div {
@@ -39,7 +43,7 @@
     padding:  clamp(7px,5%, 15px) clamp(7px,10%, 25px);
     width: fit-content;
     text-decoration: none;
-    font-size: clamp(10px, calc(10px + 14 * ((100vw - 320px) / 760)), 24px);
+    font-size: clamp(15px, calc(15px + 9 * ((100vw - 320px) / 760)), 24px);
     font-weight: bold;
     text-align: center;
     vertical-align: middle;   
@@ -60,22 +64,22 @@
     margin: 0 -20px;
     margin-top: 10px;
     height: fit-content;
-    padding: 20px 20px;
+    padding: 20px;
     background-color: #6668DA;
     color: white;
     justify-content: space-between;
     display: flex;
     flex-direction: column;
+    gap: 35px;
 }
 
 .second-content-container > div {
-    width: 50%;
     height: fit-content;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: space-between;
-    margin-top: 20px;
+    gap: 10px;
 }
 
 .second-content-container > div > h1 {
@@ -86,6 +90,7 @@
 .second-content-container > div > p {
     /* font-size: 0.625rem; */
     min-height: 30px;
+
 }
 
 .come-make-history > div > div > p {
@@ -98,4 +103,30 @@
 
 .second-content-container > div > h1 {
     font-size: clamp(20px, calc(20px + 8 * ((100vw - 320px) / 760)), 28px);
+}
+
+
+@media (min-width: 700px) {
+    .second-content-container{
+        flex-direction: row;
+    }
+
+    .first-content-container > div > img {
+        display: none;
+    }
+
+    .first-content-container  > img {
+        display: block;
+        float: left;
+        width: min(50%,364px);
+    }
+
+    .second-content-container {
+        gap: 25%;
+    }
+
+    .second-content-container > div {
+        width: 30%;
+        gap: 30px;
+    }
 }
