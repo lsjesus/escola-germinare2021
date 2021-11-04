@@ -17,7 +17,7 @@
 }
 
 .classroom-img {
-    margin-top: 10px;
+    margin: 20px 0 10px 0;
     height: clamp(149px, calc(149px + 120*var(--screen-size)), 269px);
     width: clamp(280px, calc(280px + 226*var(--screen-size)), 506px);
     border-radius: 2px;
@@ -80,7 +80,7 @@
 }
 
 .data-content-wrapper-about-us > div > p {
-    font-size: clamp(12px, calc(12px + 6*var(--screen-size)), 18px);
+    font-size: clamp(14px, calc(14px + 4*var(--screen-size)), 18px);
 }
 
 @media only screen and (min-width: 700px) {
@@ -108,12 +108,16 @@
     .classroom-img {
         float: left;
         margin-right: 15px;
+        margin-bottom: 0;
+
     }
 
     .data-content-wrapper-about-us > div {
         width: 20%;
         height: fit-content;
     } 
+
+
 }
 
 @media screen and (min-width:800px)  {
