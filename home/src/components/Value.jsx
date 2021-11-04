@@ -2,15 +2,15 @@ import './style.css'
 import valueImg from '../assets/joao-neto.png'
 import { Header } from './Header'
 const Value = ()=>{
-    return(      
+    return(
+        <>
+        <Header>
+            <p>
+                <a href="#">Home</a>/ Processo de Admissão 2021/2022
+            </p>
+            <h1>Processo de Admissão 2021/2022</h1>
+        </Header>     
         <section className="value">
-            <Header children={"Só vinte vinte vinte"}/>
-            <div className="header">
-                <p className="track-text">
-                    <a  className="track-home">Home</a>/ Valores
-                </p>
-                <h1 className="title">Valores</h1>
-            </div>
             <img src={valueImg} alt="" />
             <fieldset>
                 <legend className="atitude-de-dono">Atitude de dono</legend>
@@ -41,6 +41,7 @@ const Value = ()=>{
                 <p>É direto, sincero, verdadeiro e transparente em suas relações, sempre com respeito, de forma positiva, agregadora e acolhedora. Não se omite, expressa suas opiniões mesmo quando contrária aos demais. Sabe dizer não.</p>
             </fieldset>
         </section>
+        </>
     )
 }
 export default Value
