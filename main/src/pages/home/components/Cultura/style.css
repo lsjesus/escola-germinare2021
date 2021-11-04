@@ -1,0 +1,118 @@
+.cultura{
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.cultura-title{
+    color: blue;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.container-cards-img{
+    display: flex;
+    margin-left: 24px;
+}
+.title-container-cultura{
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+
+}
+.card-cultura-conteudo{
+    font-size: 18px;
+    text-align: left;
+    width: fit-content;
+    margin-top: 27px;
+    font-weight: 700;
+    line-height: 21px;
+}
+.card-cultura-list{
+    list-style-type: disc;
+    font-size: 12px;
+    margin: 27px 8px;
+    font-weight: 700;
+    line-height: 14px;
+    
+}
+.item-card-list{
+    margin: 2px;
+}
+.cards-cultura{
+    display: flex;
+    margin-left: 40px;
+    justify-content: space-around;
+    width: 80%;
+    align-items: center;
+}
+.format-card{
+    background: url('../../assets//brasao-transparente.png') rgba(0, 0, 0, 0.3) no-repeat;
+    background-position: -60px 70% ;
+    height: 100%;
+    padding: 26px;
+}
+.card-cultura{
+    background:  #2E3092;
+    width: 200px;
+    height: 352px;
+    color: white;
+}
+.card-cultura-title{
+    font-family: 'Roboto', 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 900;
+    font-size: 28px;
+    border-bottom: 3px solid white;
+    padding-bottom: 7px;
+    text-align: center;
+}
+.valores-card-cultura{
+    font-weight: 700;
+    margin-left: -15px;
+    width: 185px;
+    font-size: 12px;
+}
+.link-valores{
+    text-decoration: underline;
+    color: #F7BF0A;
+    transition: color .3s ease-in-out;
+}
+.link-valores:hover{
+    color: #ab8200;
+}
+.alunos-cultura{
+    margin-bottom: 15px;
+}
+.container-cards-img{
+    margin-top: 20px;
+}
+@media only screen and (max-width: 1200px){
+    .alunos-cultura{
+        width: 50%;
+        margin-bottom: 15px;
+    }
+    @media only screen and (max-width: 500px){
+        .alunos-cultura{
+            width: 80%;
+            margin-bottom: 15px;
+        }
+    }
+    .cards-cultura{
+        flex-wrap: wrap;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        
+       
+    }
+    .container-cards-img{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .card-cultura{
+        margin: 20px;
+    }
+}

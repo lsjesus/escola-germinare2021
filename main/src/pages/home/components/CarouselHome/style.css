@@ -1,0 +1,389 @@
+@import url('./formatCarousel.css');
+:root{
+  --main-blue: #001489;
+  --main-blue2: #2445ff;
+  --main-blue3: #0a2ef7;
+  --main-gold: #ab8200;
+  --main-yellow: #f7bf0a;
+  --pastel-blue: #2e3092;
+  --pastel-blue2: #8284ff;
+  --pastel-blue3: #5e60e6;
+  --pastel-gold: #998220;
+  --pastel-yellow: #e6cc5e;
+}
+.carrossel-img{
+    width: 120vw;
+    margin-top: 90px;
+}
+.caneta-azul{
+    background-color: #A4A5FF;
+    margin-top: -14px;
+    background-image: url('../../assets/fundo-germinare.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 150px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+  }
+.caneta-azul::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: -1;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 400ms ease-in-out;
+}
+.caneta-azul:hover::after{
+  transform: scaleY(1);
+  transform-origin: top;
+}
+
+  .video{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    display: none;
+  }
+  .video-container{
+    width: 60%;
+    height: 60%;
+  }
+  .videoyt{
+    width: 100%;
+    height: 100%;
+  }
+  @media only screen and (max-width: 800px){
+    .video-container{
+      width: 96%;
+      height: 60%;
+    }
+  }
+.play{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+}
+.play-btn{
+
+  margin-bottom: 12px;
+}
+.play-title{
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--main-blue);
+  margin-bottom: 12px;
+}
+.play-subtitle{
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+@media only screen and (max-width: 700px){
+  .play-title{
+    font-size: 16px;
+  }
+  .play-subtitle{
+    font-size: 12px;
+  }
+  .caneta-azul{
+    
+    height: 100px;
+  }
+  .play-btn{
+    width: 30px;
+    margin-top: 10px;
+  }      
+  @media only  screen and (max-width: 570px) {
+    .caneta-azul{
+      background-image: url('../../assets/fundo-germinare2.png');
+    }
+  }
+}
+.close-icon{
+  fill: #9b9a9a;
+  cursor: pointer;
+  margin-left: 70%;
+  margin-bottom: 10px;
+  transition: all .2s ease-in-out;
+  
+}
+.close-icon:hover{
+  fill: #efefef;
+}
+.logo{
+    height: 65px;
+}
+.navigation{
+    margin-left: auto;
+    width: 68%;
+}
+.menu{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.item-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.about-us{
+    display: none;
+}
+.collaborator{
+    display: none;
+}
+.line{
+    width: 40px;
+    margin: 0;
+    margin-left: 555px;
+    height: .5s;
+    border-top: 3px solid transparent;
+}
+.lock{
+    margin-right: 8px;
+    margin-bottom: 4px;
+}
+.admissao{
+    color: #F7BF0A; 
+    font-weight: 800; 
+    /* border: 3px solid;
+    border-radius: 10px;
+    padding: 10px; */
+    font-size: 19px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chevrons{
+    position: absolute;
+    z-index: 10;
+    top: auto;
+    display: block;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 45px;
+    animation: fade-slide-up 1s 1s ease-out forwards,
+    pulse 2s 3s ease-out infinite;
+    opacity: 0;
+    cursor: pointer;
+}
+@keyframes fade-slide-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-4rem);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  @keyframes fade-slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(4rem);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  @keyframes pop-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-4rem) scale(.8);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 1;
+      transform: none;
+    }
+    50% {
+      opacity: .8;
+      transform: scale(.8);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+@media only screen and (min-width: 1400px) {
+    .chevrons {
+      font-size: 75px;
+     
+    }
+    .item-menu{
+        font-size: 25px;
+    }
+    .admissao{
+      font-size: 26px;
+    }
+  }
+@media only screen and (max-width: 605px){
+  .chevrons{
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}
+.carousel-txt{
+  position: absolute;
+  width: auto;
+  max-width: 729px;
+  top: 40%;
+  left: 6%;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+}
+.cleuton{
+  max-width: 629px;
+}
+.admissao{
+  max-width: 429px;
+  text-align: left;
+}
+.universidade{
+  max-width: 629px;
+}
+.carousel-btn{
+  position: absolute;
+  top: 74%;
+  left: 6%;
+  background-color: #0A2EEF;
+  color: white;
+  border: none;
+  padding: 20px;
+  width: 327px;
+  font-size: 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: .2s ease-in-out;
+}
+.carousel-btn:hover{
+  background-color: var(--main-blue2);
+  color: #dbdada;
+}
+@media only screen and (min-width: 1500px){
+  .carousel-txt{
+    font-size: 80px;
+    max-width: 900px;
+  }
+  .carousel-btn{
+    padding: 40px;
+    width: 427px;
+    top: 64%;
+  }
+}
+@media only screen and (max-width: 1224px){
+  .carousel-txt{
+    top: 42%;
+    max-width: 329px;
+    font-size: 30px;
+    left: 5%;
+  }
+  .carousel-btn{
+    top: 62%;
+    width: 150px;
+    left: 5%;
+    font-size: 16px;
+    padding: 15px;
+  }
+  @media only screen and (max-width: 900px){
+    .admissao, .universidade {
+      font-size: 22px;
+    }
+    .carousel-btn{
+      top: 58%;
+    }
+    @media only screen and (max-width: 600px){
+      /* .carousel-txt{
+        top: 52%;
+        font-size: 50px;
+        max-width: 200px;
+      } */
+      .chevrons{
+        font-size: 30px;
+        
+      }
+      .carousel-btn{
+        top: 68%;
+        width: 125px;
+        padding: 8px;
+        font-size: 12px;
+      }
+      .carrossel-img{
+        width: 200vw;
+        transform: translateX(-200px);
+      }
+      .admissao-img{
+        transform: translateX(-100px);
+      }
+      @media only screen and (max-width: 500px){
+        .carousel-txt{
+          font-size: 18px;
+          top: 48%;
+          max-width: 180px;
+        }
+        .carousel-btn{
+          top: 68%;
+          padding: 6px;
+          width: 100px;
+          font-size: 8px;
+        }
+        .chevrons{
+          font-size: 30px;
+        }
+
+        .carrossel-img{
+          transform: translateX(-150px);
+        }
+        .admissao-img{
+          transform: translateX(-150px);
+        }
+        .katia{
+          transform: translateX(-200px);
+        }
+      }
+    }
+  }
+}
