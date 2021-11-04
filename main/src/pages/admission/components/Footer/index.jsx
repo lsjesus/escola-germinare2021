@@ -2,10 +2,11 @@ import logo from '../../assets/logo-novo-branco-oficial.png'
 import { FaFacebook, FaYoutube, FaLinkedin, FaInstagram } from 'react-icons/fa'
 import { RiInstagramFill } from 'react-icons/ri'
 import './style.css'
+import { Link } from 'react-router-dom'
 const Footer = ()=>{
     return(
         <footer className='footer'>
-            <img src={logo} alt="Logo Oficial Germinare" className='logo-footer' />
+            <Link to='/'><img src={logo} alt="Logo Oficial Germinare" className='logo-footer' /></Link>
             <ul className='footer-menu'>
                         <a href="">
                             <li className='item-footer'>Admissão 2021/2022</li>

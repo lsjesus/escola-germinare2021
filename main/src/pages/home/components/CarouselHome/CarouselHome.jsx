@@ -11,6 +11,7 @@ import Universidade from '../../assets/universidade.png'
 import Play from '../../assets/play.png'
 import Cleutonpq from '../../assets/cleuton-pq.png'
 import { AiOutlineCloseCircle } from 'react-icons/ai'
+import { Link } from 'react-router-dom'
 const CarouselHome = ()=>{
     function openDisplay(){
         const display = document.querySelector('.video')
@@ -84,6 +85,7 @@ const CarouselHome = ()=>{
                     <a href='#scroll'>
                         <FiChevronsDown className='chevrons'/>
                     </a>
+            
                 </CarouselItem>
                 <CarouselItem  interval={8000}>
                     <picture>
@@ -98,7 +100,7 @@ const CarouselHome = ()=>{
                 <CarouselItem interval={8000}>
                     <img src={Admissao}  className='carrossel-img admissao-img'></img>
                     <h1 className='carousel-txt admissao'>Processo de Admissão 2021/2022</h1>
-                    <button className='carousel-btn'>Inscreva-se</button>
+                    <Link to='/admission'><button className='carousel-btn'>Inscreva-se</button></Link>
                     <a href='#scroll'>
                         <FiChevronsDown className='chevrons'/>
                     </a>
@@ -112,8 +114,9 @@ const CarouselHome = ()=>{
                     </a>
                 </CarouselItem>
             </Carousel>
+            <div id="scroll"></div>
             <div className="caneta-azul" >
-                <div className="play" onClick={openDisplay} id='scroll'>
+                <div className="play" onClick={openDisplay}>
                     <img src={Play} alt="" className='play-btn' />
                     <h1 className="play-title">HÁ 12 ANOS MUDANDO VIDAS</h1>
                     <p className='play-subtitle'>Assista o video e conheça mais a Germinare </p>

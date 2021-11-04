@@ -12,7 +12,7 @@ const Main = ()=>{
         </Header> 
         <main className='main'>
              
-            <div className= 'container'>
+            <div className= 'container-adm'>
                 <div className= 'info'>
                     <p className= 'paragrafo'>A lista de convocados para a segunda etapa do Processo de Admissão 2021/2022 está disponível! <a href="http://www.escolagerminare.org.br/wp-content/uploads/2015/08/Lista-de-Convocados-2%C2%B0-Etapa-2021-2022.pdf" className='link'>Clique aqui</a></p>
                     <p className= 'paragrafo'>Aos convocados para a segunda fase, informamos que todas as entrevistas serão realizadas de modo presencial com candidatos e responsáveis.</p>

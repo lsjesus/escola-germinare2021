@@ -8,7 +8,7 @@
     margin: 40px 20px 40px 20px;
 }
 
-.container{
+.container-adm{
     padding: 0 20px 50px 20px;
     /* width: calc(100% - 40px); */
     display: flex;
@@ -23,7 +23,7 @@
     line-height: 125%;
     font-size: 16px;
     font-weight: 500;
-    padding-right: 20px;
+
 }
 .link{
     color: #F7BF0A;
@@ -66,13 +66,13 @@
         height: fit-content;
     }
     .alunos{
-        width: calc(140px + 600 * (100vw - 320px)/760);
-        height: calc(120px + 487.5 * (100vw - 320px)/760);
+        width: 50%;
+        height:40%;
         margin: 0 20px;
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
     .alunos{
         display: none;
     }

@@ -3,7 +3,7 @@ import logo from '../../assets/logo-germinare.png'
 import {FiChevronRight} from 'react-icons/fi'
 import { useState } from 'react'
 import {FaLock} from 'react-icons/fa'
-
+import { Link } from 'react-router-dom'
 const Nav = ()=>{
     const [isActive, setActive] = useState("true");
     const [isMenuActive, setMenuActive] = useState("true");
@@ -33,7 +33,7 @@ const Nav = ()=>{
     const chevCollabClassActual = ()=>{return !isChevCollabActive ? "turned" : "null"};
 
     return(
-        <div className="nav-wrapper">
+        <div className="nav-wrapper nav-home">
             <div className='nav'>
                 <a href="#" className="logo-wrapper"><img src={logo} alt="Logo Escola Germinare" className="logo"/></a>
                 <button className="burguer-button" onClick={ToggleClass}>
@@ -44,7 +44,7 @@ const Nav = ()=>{
             </div>
             <ul className={`menu ${classActual()}`}>
                 <li>
-                    <a href="#" className="menu-item admission">Admissão 2021/2022</a>
+                    <Link to='/admission' className="menu-item admission">Admissão 2021/2022</Link>
                     <h1 class="hr"></h1>
                 </li>
                 <li>

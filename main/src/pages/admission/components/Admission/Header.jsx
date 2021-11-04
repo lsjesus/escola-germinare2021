@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const Header = styled.div`
+margin-top: 140px;
     width: calc(100%-40px);
     padding: 0 20px;
 

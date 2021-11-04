@@ -1,14 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 .nav-wrapper {
   background-color: #001489;
-  position: fixed;
+  position: absolute;
   height: 90px;
   width: 100%;
   box-shadow: 5px 5px 25px rgb(12, 1, 65);
   z-index: 98;
   color: white;
 }
-
+.nav-home{
+  position: fixed;
+}
 .nav {
   width: calc(100%-40px);
   height: 90px;

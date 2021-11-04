@@ -6,15 +6,18 @@ import Academias from "./components/Academias/index";
 import AboutOurSchool from "./components/AboutOurSchool/AboutOurSchool";
 import ComeMakeHistory from "./components/ComeMakeHistory/ComeMakeHistory";
 const Home = ()=>{
-    <>
-        <Nav/>
-        <Carousel/>
-        <AboutOurSchool/>
-        <Cultura/>
-        <Academias/>
-        <ComeMakeHistory/>
-        <Footer/>
-    </>
+  return(
+    <div className='Home'>
+      <Nav/>
+      <Carousel/>
+      <AboutOurSchool/>
+      <Cultura/>
+      <Academias/>
+      <ComeMakeHistory/>
+      <Footer/>
+    </div>
+  )
+   
 
 
 }

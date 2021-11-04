@@ -198,6 +198,10 @@
     opacity: 0;
     cursor: pointer;
 }
+#scroll{
+  position: absolute;
+  margin-top: -90px;
+}
 @keyframes fade-slide-down {
     0% {
       opacity: 0;

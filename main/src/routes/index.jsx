@@ -1,15 +1,14 @@
-import {BrowserRouter,  Route} from 'react-router-dom'
-import { Routes } from 'react-router-dom'
+import {BrowserRouter,  Route, Switch} from 'react-router-dom'
 import Home from '../pages/home/index'
 import Admission from '../pages/admission/index'
-const Rotas = ()=>{
+const Routes = ()=>{
     return(
         <BrowserRouter>
-            <Routes>
-                <Route path='/' component={Admission} exact />
-                {/* <Route path='/admission' component={Admission} /> */}
-            </Routes>
+            <Switch>
+                <Route path='/' component={Home} exact />
+                <Route path='/admission' component={Admission} />
+            </Switch>
         </BrowserRouter>
     )
 }
-export default Rotas
+export default Routes

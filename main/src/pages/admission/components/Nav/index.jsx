@@ -3,7 +3,7 @@ import logo from '../../assets/logo-germinare.png'
 import {FiChevronRight} from 'react-icons/fi'
 import { useState } from 'react'
 import {FaLock} from 'react-icons/fa'
-
+import { Link } from 'react-router-dom'
 const Nav = ()=>{
     const [isActive, setActive] = useState("true");
     const [isMenuActive, setMenuActive] = useState("true");
@@ -33,9 +33,9 @@ const Nav = ()=>{
     const chevCollabClassActual = ()=>{return !isChevCollabActive ? "turned" : "null"};
 
     return(
-        <div className="nav-wrapper">
+        <div className="nav-wrapper nav-adm">
             <div className='nav'>
-                <a href="#" className="logo-wrapper"><img src={logo} alt="Logo Escola Germinare" className="logo"/></a>
+                <Link to='/' className="logo-wrapper"><img src={logo} alt="Logo Escola Germinare" className="logo"/></Link>
                 <button className="burguer-button" onClick={ToggleClass}>
                     <div className={`hamburguer-menu ${menuActualClass()} ret-top`}></div>
                     <div className={`hamburguer-menu ${menuActualClass()} ret-middle`}></div>

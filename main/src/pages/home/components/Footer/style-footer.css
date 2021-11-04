@@ -1,4 +1,4 @@
-.footer{
+.footer-home{
   position: relative;
   background-color: #001489;
   display: flex;
@@ -24,7 +24,7 @@
   
 }
 .footer-line{
-
+  font-size: 12px;
   border-top: 2.5px solid;
   width: 95%;
   text-align: right;
@@ -76,7 +76,7 @@
     
   }
   @media only screen and (max-width: 660px){
-    .footer{
+    .footer-home{
       height: max-content;
       padding: 15px;
       
