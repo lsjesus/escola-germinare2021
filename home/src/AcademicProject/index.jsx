@@ -1,11 +1,18 @@
 import './style.css'
-
+import {Header} from './Header'
 const AcademicProject = ()=>{
     return (
+        <>
+        <Header>
+            <p>
+                <a href="#">Home</a>/ Projeto Acadêmico
+            </p>
+            <h1>Projeto Acadêmico</h1>
+        </Header>  
         <section className="academic-project">
             <p>
-                A escola Germinare tem como missão formar jovens administradores de empresas e cidadãos por meio de uma educação única e inteiramente gratuita. É uma instituição aprovada pelo MEC – Ministério da Educação – e reconhecida pela UNESCO.
-                O foco principal é formar de maneira efetiva jovens gestores e líderes para o mercado de trabalho, oferecendo ampla preparação com conteúdos dirigidos ao desenvolvimento de habilidades profissionais e a oportunidade de especialização escolhida entre os seguintes negócios: digital, financeiro, varejo, commodities e bens de consumo.
+                A escola Germinare tem como missão formar jovens administradores de empresas e cidadãos por meio de uma educação única e inteiramente gratuita. É uma instituição aprovada pelo MEC – Ministério da Educação – e reconhecida pela UNESCO. <br/><br/>
+                O foco principal é formar de maneira efetiva jovens gestores e líderes para o mercado de trabalho, oferecendo ampla preparação com conteúdos dirigidos ao desenvolvimento de habilidades profissionais e a oportunidade de especialização escolhida entre os seguintes negócios: digital, financeiro, varejo, commodities e bens de consumo.<br/><br/>
                 Disciplinas distribuídas em áres de conhecimento e academias:
             </p>
             <div className="dicipline-container-wrapper">
@@ -15,7 +22,7 @@ const AcademicProject = ()=>{
                     <ul>
                         <li>Português</li>
                         <li>Inglês</li>
-                        <li>Condicionamento Físico</li>
+                        <li>Condicionamen&shy;to Físico</li>
                     </ul>
                 </div>
                 <div className="discipline-container">
@@ -101,7 +108,7 @@ const AcademicProject = ()=>{
                     </ul>
                 </div>
                 <div className="discipline-container">
-                    <h1>Academia Swift</h1>
+                    <h1>Academia <br/>Swift</h1>
                     <hr />
                     <ul>
                         <li>Atendimento ao Cliente</li>
@@ -112,12 +119,13 @@ const AcademicProject = ()=>{
             </div>
 
             <p>
-                O currículo também prevê uma carga intensa voltada para o inglês, pois acredita-se que para a formação de um gestor em negócios, a fluência neste idioma é essencial.
-                Desse modo, um dos pilares centrais do projeto é não subestimar os jovens, por isso os alunos iniciam estágios já no segundo semestre do 9º ano, como forma de aplicar no mundo empresarial os conhecimentos adquiridos em sala de aula. Esta é uma das estratégias da escola para que que os alunos tomem conhecimentos e demandas do mundo real, interessem-se, entendam a importância e dediquem-se para superar as expectativas.
+                O currículo também prevê uma carga intensa voltada para o inglês, pois acredita-se que para a formação de um gestor em negócios, a fluência neste idioma é essencial.<br/><br/>
+                Desse modo, um dos pilares centrais do projeto é não subestimar os jovens, por isso os alunos iniciam estágios já no segundo semestre do 9º ano, como forma de aplicar no mundo empresarial os conhecimentos adquiridos em sala de aula. Esta é uma das estratégias da escola para que que os alunos tomem conhecimentos e demandas do mundo real, interessem-se, entendam a importância e dediquem-se para superar as expectativas.<br/><br/>
                 A partir do ano de 2015, o Ensino Médio tornou-se técnico. Assim, os alunos, ao término do 3º ano do Ensino Médio, receberão um certificado de Técnico em Administração de empresas.
             </p>
 
         </section>
+        </>
     )
 }
 export default AcademicProject
