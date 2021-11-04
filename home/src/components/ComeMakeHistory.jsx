@@ -7,13 +7,9 @@ const ComeMakeHistory = ()=>{
     return(
         <section className="come-make-history">
             <div className="first-content-container">
-                <picture>
-                    <source media="(max-width:720px)" srcset={studentLookingSmall}/>
-                    <img src={studentLooking} alt="" />
-                </picture>
-                
                 <div>
                     <h1>Venha fazer parte da nossa história!</h1>
+                    <img src={studentLooking} alt="" />
                     <p>A Escola Germinare forma jovens líderes de negócios de alta performance preparados para a sociedade e o mercado de trabalho. Participe do processo de admissão 2021/2022.</p>
                     <a href="#">Inscreva-se</a>
                 </div>
