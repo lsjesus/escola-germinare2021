@@ -1,9 +1,10 @@
 import './style.css'
 import valueImg from '../assets/joao-neto.png'
-
+import { Header } from './Header'
 const Value = ()=>{
     return(      
         <section className="value">
+            <Header children={"Só vinte vinte vinte"}/>
             <div className="header">
                 <p className="track-text">
                     <a  className="track-home">Home</a>/ Valores
