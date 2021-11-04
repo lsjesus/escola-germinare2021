@@ -1,7 +1,7 @@
 import './style.css'
 import studentLooking from '../../assets/student-looking.png'
 import studentLookingSmall from '../../assets/student-looking-small.png'
-
+import { Link } from 'react-router-dom'
 
 const ComeMakeHistory = ()=>{
     return(
@@ -12,7 +12,7 @@ const ComeMakeHistory = ()=>{
                     <h1>Venha fazer parte da nossa história!</h1>
                     <img src={studentLooking} alt="" />
                     <p>A Escola Germinare forma jovens líderes de negócios de alta performance preparados para a sociedade e o mercado de trabalho. Participe do processo de admissão 2021/2022.</p>
-                    <a href="#">Inscreva-se</a>
+                    <Link to='/admission'>Inscreva-se</Link>
                 </div>
             </div>
             <div className="second-content-container">
