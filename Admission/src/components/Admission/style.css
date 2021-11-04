@@ -1,4 +1,6 @@
-
+.main{
+    padding: 20px;
+}
 .title{
     color: #001489;
     font-weight: 700;
@@ -7,7 +9,8 @@
 }
 
 .container{
-    margin: 0 20px 50px 20px;
+    padding: 0 20px 50px 20px;
+    /* width: calc(100% - 40px); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,10 +19,11 @@
 
 .info{
     height: 490px;
-    width: auto;
+    width: fit-content;
     line-height: 125%;
     font-size: 16px;
     font-weight: 500;
+    padding-right: 20px;
 }
 .link{
     color: #F7BF0A;

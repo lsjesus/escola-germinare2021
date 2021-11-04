@@ -1,7 +1,7 @@
-import logo from '../../../assets/logo-novo-branco-oficial.png'
+import logo from '../../assets/logo-novo-branco-oficial.png'
 import { FaFacebook, FaYoutube, FaLinkedin, FaInstagram } from 'react-icons/fa'
 import { RiInstagramFill } from 'react-icons/ri'
-import './style-footer.css'
+import './style.css'
 const Footer = ()=>{
     return(
         <footer className='footer'>

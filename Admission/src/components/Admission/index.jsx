@@ -1,10 +1,17 @@
 import alunos from '../../assets/alunos.png'
-import './style-main.css'
+import './style.css'
+import { Header } from './Header'
 const Main = ()=>{
     return(
+        <>
+        <Header>
+            <p>
+                <a href="#">Home</a>/ Processo de Admissão 2021/2022
+            </p>
+            <h1>Processo de Admissão 2021/2022</h1>
+        </Header> 
         <main className='main'>
-            <p className= 'navegacao'> <span id='home'>Home</span>  / Processo de admissão 2021/2022</p>
-            <h1 className= 'title'>PROCESSO DE ADMISSÃO 2021/2022</h1>
+             
             <div className= 'container'>
                 <div className= 'info'>
                     <p className= 'paragrafo'>A lista de convocados para a segunda etapa do Processo de Admissão 2021/2022 está disponível! <a href="http://www.escolagerminare.org.br/wp-content/uploads/2015/08/Lista-de-Convocados-2%C2%B0-Etapa-2021-2022.pdf" className='link'>Clique aqui</a></p>
@@ -17,6 +24,7 @@ const Main = ()=>{
                 <img src={alunos} alt="Alunos na escada" className='alunos' />
             </div>
         </main>
+        </>
         
     )
 }
