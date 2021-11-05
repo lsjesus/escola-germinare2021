@@ -26,7 +26,8 @@ export const Header = styled.div`
     h1 {
         font-size: clamp(24px, calc(24px + 24 * (100vw - 320px)/760) ,48px);
         font-weight: 700;
-        color: #29305c;
+        color: #001489;
         margin: 40px 0;
+        text-transform: uppercase;
     }
 `;

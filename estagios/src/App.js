@@ -1,9 +1,9 @@
-import Value from "./components/Value";
+import Estagios from "./components/Estagios";
 import './styles/global.css'
 function App() {
   return (
     <div className="App">
-      <Value/>
+      <Estagios/>
     </div>
   );
 }
