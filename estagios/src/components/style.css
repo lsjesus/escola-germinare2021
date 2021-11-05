@@ -29,8 +29,7 @@
 }
 .lider{
     background: url('../assets/lider.png') no-repeat;
-    background-size: 100% auto;
-    background-position-y: -60px;
+    background-size: 100%;
     
 }
 .programador{
@@ -49,7 +48,7 @@
     align-items: center;
     text-align: center;
     color: white;
-    transition: all .8s ease-in-out;
+    
 }
 .estagios-name{
     font-weight: 700;
@@ -62,11 +61,11 @@
     margin: auto;
     margin-left: 80px;
     margin-right: 80px;
-    margin-top: 20px;
+    margin-top: 50px;
     line-height: 125%;
     text-align: justify;
     font-weight: 400;
-    font-size: 20px;
+    font-size: clamp(12px, calc(10px + 8 * (100vw - 320px)/760), 20px);
     transition: all .6s ease-in-out .5s;
 }
 .format-estagios-container{
@@ -92,6 +91,54 @@
 .format-estagios-container:hover > .estagios-description{
     opacity: 1;
 }
-.estagios-container:hover{
-    background-size: 102%;
+@media only screen and (max-width: 1176px){
+    .estagios-container{
+        background-size: auto;
+        background-position: center;
+    }
+    .estagios-description{
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
+@media only screen and (max-width: 320px){
+    .estagios-description{
+        font-size: 10px;
+    }
+}
+.hand-icon{
+    font-size: 30px;
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    opacity: 0;
+    animation: pulse 2s 14s ease-out infinite;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    fill: #bbbaba;
+}
+@keyframes pulse {
+    0% {
+      opacity: 1;
+      
+    }
+    50% {
+      opacity: .8;
+      transform: scale(1.2);
+    }
+    100% {
+      opacity: 1;
+      
+    }
+  }
+  @keyframes hover_pulse{
+      from{
+          opacity: 1;
+      }
+      to{
+          opacity: 0;
+      }
+  }
+.format-estagios-container:hover .hand-icon{
+    animation: hover_pulse .5s ease-out 1;
+    
 }
