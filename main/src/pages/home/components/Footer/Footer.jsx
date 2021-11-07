@@ -6,66 +6,66 @@ import './style-footer.css'
 const Footer = ()=>{
     return(
         <footer className='footer footer-home'>
-            <a href=""><img src={logo} alt="Logo Oficial Germinare" className='logo-footer' /></a>
+            <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} to='/'><img src={logo} alt="Logo Oficial Germinare" className='logo-footer' /></Link>
             <ul className='footer-menu'>
-                        <Link to='/admission' className='link-footer'>
+                        <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} to='/admission' className='link-footer'>
                             <li className='item-footer'>Admissão 2021/2022</li>
                         </Link>
-                        <a href="" className='link-footer'>
+                        <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='link-footer'>
                             <li className='item-footer'>Doação</li>
-                        </a>
-                        <a href="" className='link-footer'>
+                        </Link>
+                        <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='link-footer'>
                             <li className='item-footer'>Contato</li>
-                        </a>
+                        </Link>
                         <li className='item-footer about-us-li'>
                             Sobre nós
                             <ul className='about-us-footer'>
-                                <a href="" className='link-footer'>
+                                <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='link-footer' to='/values'>
                                     <li className='item-footer'>Valores</li>
-                                </a>
-                                <a href="" className='link-footer'>
+                                </Link>
+                                <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='link-footer' to='/internship'>
                                     <li className='item-footer'>Estágios</li>
-                                </a>
-                                <a href="" className='link-footer'>
+                                </Link>
+                                <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='link-footer'>
                                     <li className='item-footer'>Certificados</li>
-                                </a>
-                                <a href="" className='link-footer'>
+                                </Link>
+                                <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='link-footer'>
                                     <li className='item-footer'>Governança</li>
-                                </a>
-                                <a href="" className='link-footer'>
+                                </Link>
+                                <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='link-footer'>
                                     <li className='item-footer'>Projeto Acadêmico</li>
-                                </a>
+                                </Link>
                             </ul>
                         </li>
                         <li className='item-footer collaborator-li-footer'>
                             Login
                             <ul className='collaborator-footer'>
-                                <a href="" className='link-footer'>
+                                <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='link-footer'>
                                     <li className='item-footer'>Minha biblioteca</li>
-                                </a>
-                                <a href="" className='link-footer'>
+                                </Link>
+                                <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='link-footer'>
                                     <li className='item-footer'>Agenda Edu</li>
-                                </a>
-                                <a href="" className='link-footer'>
+                                </Link>
+                                <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='link-footer'>
                                     <li className='item-footer'>Árvore de livros</li>
-                                </a>
+                                </Link>
                             </ul>
                         </li>
                         <li className='social'>
                             Acompanhe-nos
                             <ul className="social-icons">
-                                <a href="" className='link-social'>
+                                <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='link-social'>
                                     <li className="social-icon"><FaFacebook className='social-icon-child'/></li>
-                                </a>
-                                <a href="" className='link-social'>
+                                </Link>
+                                <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='link-social'>
                                     <li className="social-icon"><FaYoutube className='social-icon-child'/></li>
-                                </a>
-                                <a href="" className='link-social'>
+                                </Link>
+                                <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='link-social'>
                                     <li className="social-icon"><FaLinkedin className='social-icon-child' /></li>
-                                </a>
-                                <a href="" className='link-social'>
+                                </Link>
+                                <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='link-social'>
                                     <li className="social-icon"><RiInstagramFill className='social-icon-child'/></li>
-                                </a>
+                                </Link>
                             </ul>
                         </li>
 

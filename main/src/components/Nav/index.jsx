@@ -1,5 +1,5 @@
 import './style.css'
-import logo from '../../assets/logo-germinare.png'
+import logo from '../assets/logo-germinare.png'
 import {FiChevronRight} from 'react-icons/fi'
 import { useState } from 'react'
 import {FaLock} from 'react-icons/fa'
@@ -44,15 +44,15 @@ const Nav = ()=>{
             </div>
             <ul className={`menu ${classActual()}`}>
                 <li>
-                    <a href="#" className="menu-item admission">Admissão 2021/2022</a>
+                    <Link className="menu-item admission" to='/admission' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>Admissão 2021/2022</Link>
                     <h1 class="hr"></h1>
                 </li>
                 <li>
-                    <a href="#" className="menu-item">Doação</a>
+                    <Link className="menu-item" onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>Doação</Link>
                     <h1 class="hr"></h1>
                 </li>
                 <li>
-                    <a href="#" className="menu-item">Contato</a>
+                    <Link className="menu-item" onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>Contato</Link>
                     <h1 class="hr"></h1>
                 </li>
                 <li className='about-us-container'>
@@ -61,22 +61,22 @@ const Nav = ()=>{
                     </div>
                     <ul className={`submenu ${aboutClassActual()}`}>
                         <li>
-                            <a className='menu-item' href="#">Valores</a>
+                            <Link className='menu-item' to='/values' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>Valores</Link>
                             <h1 class="hr"></h1>
                         </li>
                         <li>
-                            <a className='menu-item' href="#">Estágios</a>
+                            <Link className='menu-item' to='/internship' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>Estágios</Link>
                             <h1 class="hr"></h1>
                         </li>
                         <li>
-                            <a className='menu-item' href="#">Certificados</a>
+                            <Link className='menu-item' href="#" onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>Certificados</Link>
                             <h1 class="hr"></h1></li>
                         <li>
-                            <a className='menu-item' href="#">Governança</a>
+                            <Link className='menu-item' href="#" onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>Governança</Link>
                             <h1 class="hr"></h1>
                         </li>
                         <li>
-                            <a className='menu-item' href="#">Projeto Acadêmico</a>
+                            <Link className='menu-item' href="#" onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>Projeto Acadêmico</Link>
                             <h1 class="hr"></h1>
                         </li>
                     </ul>  
@@ -87,15 +87,15 @@ const Nav = ()=>{
                     </div>
                     <ul className={`submenu ${collabClassActual()}`}>
                         <li>
-                            <a className='menu-item' href="#">Minha biblioteca</a>
+                            <Link className='menu-item' href="#" onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>Minha biblioteca</Link>
                             <h1 class="hr"></h1>
                         </li>
                         <li>
-                            <a className='menu-item' href="#">Agenda Edu</a>
+                            <Link className='menu-item' href="#" onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>Agenda Edu</Link>
                             <h1 class="hr"></h1>
                         </li>
                         <li>
-                            <a className='menu-item' href="#">Árvore de livros</a>
+                            <Link className='menu-item' href="#" onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>Árvore de livros</Link>
                             <h1 class="hr"></h1>
                         </li>
                     </ul>    

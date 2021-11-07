@@ -40,12 +40,12 @@
   color: white;
   text-decoration: none;
 }
-a{
+.footer-menu > a, .footer-menu > li > ul> a{
   color: white;
   height: fit-content;
   transition: all .2s ease-in-out;
 }
-a:hover{
+.footer-menu > a:hover, .footer-menu > li > ul> a:hover{
   color: #dadadac9;
 }
 .social-icons{

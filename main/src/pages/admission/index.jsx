@@ -1,6 +1,6 @@
-import Footer from "./components/Footer/index"
+import Footer from "../../components/Footer/index"
 import Main from "./components/Admission/index"
-import Nav from './components/Nav/index'
+import Nav from '../../components/Nav/index'
 const Admission = ()=>{
     return(
         <div className="Admission">

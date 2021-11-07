@@ -33,9 +33,9 @@ const Nav = ()=>{
     const chevCollabClassActual = ()=>{return !isChevCollabActive ? "turned" : "null"};
 
     return(
-        <div className="nav-wrapper nav-home">
+        <div className="nav-wrapper">
             <div className='nav'>
-                <a href="#" className="logo-wrapper"><img src={logo} alt="Logo Escola Germinare" className="logo"/></a>
+                <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className="logo-wrapper"><img src={logo} alt="Logo Escola Germinare" className="logo"/></Link>
                 <button className="burguer-button" onClick={ToggleClass}>
                     <div className={`hamburguer-menu ${menuActualClass()} ret-top`}></div>
                     <div className={`hamburguer-menu ${menuActualClass()} ret-middle`}></div>
@@ -44,15 +44,15 @@ const Nav = ()=>{
             </div>
             <ul className={`menu ${classActual()}`}>
                 <li>
-                    <Link to='/admission' className="menu-item admission">Admissão 2021/2022</Link>
+                    <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} to='/admission' className="menu-item admission">Admissão 2021/2022</Link>
                     <h1 class="hr"></h1>
                 </li>
                 <li>
-                    <a href="#" className="menu-item">Doação</a>
+                    <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className="menu-item">Doação</Link>
                     <h1 class="hr"></h1>
                 </li>
                 <li>
-                    <a href="#" className="menu-item">Contato</a>
+                    <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className="menu-item">Contato</Link>
                     <h1 class="hr"></h1>
                 </li>
                 <li className='about-us-container'>
@@ -61,41 +61,41 @@ const Nav = ()=>{
                     </div>
                     <ul className={`submenu ${aboutClassActual()}`}>
                         <li>
-                            <a className='menu-item' href="#">Valores</a>
+                            <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='menu-item' to='/values'>Valores</Link>
                             <h1 class="hr"></h1>
                         </li>
                         <li>
-                            <a className='menu-item' href="#">Estágios</a>
+                            <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='menu-item' to='/internship'>Estágios</Link>
                             <h1 class="hr"></h1>
                         </li>
                         <li>
-                            <a className='menu-item' href="#">Certificados</a>
+                            <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='menu-item'>Certificados</Link>
                             <h1 class="hr"></h1></li>
                         <li>
-                            <a className='menu-item' href="#">Governança</a>
+                            <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='menu-item'>Governança</Link>
                             <h1 class="hr"></h1>
                         </li>
                         <li>
-                            <a className='menu-item' href="#">Projeto Acadêmico</a>
+                            <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='menu-item'>Projeto Acadêmico</Link>
                             <h1 class="hr"></h1>
                         </li>
                     </ul>  
                 </li>
                 <li  className='collaborator-container'>
                     <div onClick={toggleCollabClass} className="title-submenu">
-                        <p className="menu-item"><FaLock size={12} className="lock-icon"/> Login <FiChevronRight size={20} className={`chevron-right ${chevCollabClassActual()}`}/></p>
+                        <p className="menu-item"><FaLock size={12} className="lock-icon"/> Acesso <FiChevronRight size={20} className={`chevron-right ${chevCollabClassActual()}`}/></p>
                     </div>
                     <ul className={`submenu ${collabClassActual()}`}>
                         <li>
-                            <a className='menu-item' href="#">Minha biblioteca</a>
+                            <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='menu-item'>Minha biblioteca</Link>
                             <h1 class="hr"></h1>
                         </li>
                         <li>
-                            <a className='menu-item' href="#">Agenda Edu</a>
+                            <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='menu-item'>Agenda Edu</Link>
                             <h1 class="hr"></h1>
                         </li>
                         <li>
-                            <a className='menu-item' href="#">Árvore de livros</a>
+                            <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='menu-item'>Árvore de livros</Link>
                             <h1 class="hr"></h1>
                         </li>
                     </ul>    

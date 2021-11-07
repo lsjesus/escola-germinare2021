@@ -4,16 +4,14 @@
 
 .nav-wrapper {
   background-color: #001489;
-  /* position: absolute; */
+  position: absolute;
   height: 90px;
   width: 100vw;
   box-shadow: 5px 5px 25px rgb(12, 1, 65);
   z-index: 101;
   color: white;
+  top: 0;
   
-}
-.nav-adm{
-  margin-top: -140px;
 }
 .nav {
   width: calc(100%-40px);
