@@ -1,17 +1,15 @@
 import './style.css'
 import { Header } from './Header'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
 import unesco from '../assets/unesco.png'
 import cmdca from '../assets/cmdca.png'
 import cebas from '../assets/cebas.png'
+import { Link } from 'react-router-dom'
 const Certificados = ()=>{
-    window.addEventListener('load', function() {AOS.init()})
     return(
         <>
         <Header>
             <p>
-                <a href="#">Home</a>/ Certificados
+                <Link to='/'>Home</Link>/ Certificados
             </p>
             <h1>Certificados</h1>
         </Header>     

@@ -1,7 +1,7 @@
 import './style.css'
 import { Header } from './Header'
 import AOS from 'aos'
-import 'aos/dist/aos.css'
+import '../../../styles/format-aos.css'
 import { GiClick } from 'react-icons/gi'
 import { Link } from 'react-router-dom'
 const Estagios = ()=>{

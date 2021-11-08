@@ -6,7 +6,7 @@ import original from '../../assets/logo-original.png'
 import seara from '../../assets/logo-seara.png'
 import flora from '../../assets/logo-flora.png'
 import AOS from 'aos'
-import './format-aos.css'
+import '../../../../styles/format-aos.css'
 const Academias = ()=>{
     window.addEventListener('load', function() {AOS.init()})
     window.onscroll = function() {

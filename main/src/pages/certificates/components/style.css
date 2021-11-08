@@ -1,6 +1,6 @@
 .certificado-title{
     color: #001489;
-    font-size: clamp(12px, calc(10px + 12 * (100vw - 320px)/760), 24px);
+    font-size: clamp(14px, calc(10px + 10 * (100vw - 320px)/760), 24px);
     font-weight: 600;
     max-width: 594px;
     text-align: center;
@@ -16,7 +16,7 @@
 }
 .certificado-description{
     max-width: 576px;
-    font-size: clamp(12px, calc(10px + 6 * (100vw - 320px)/760), 18px);
+    font-size: clamp(14px, calc(10px + 4 * (100vw - 320px)/760), 18px);
     line-height: 125%;
     margin-top: 20px;
 }
