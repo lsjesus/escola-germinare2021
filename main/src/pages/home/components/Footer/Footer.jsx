@@ -57,18 +57,18 @@ const Footer = ()=>{
                         <li className='social'>
                             Acompanhe-nos
                             <ul className="social-icons">
-                                <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='link-social'>
-                                    <li className="social-icon"><FaFacebook className='social-icon-child'/></li>
-                                </Link>
-                                <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='link-social'>
-                                    <li className="social-icon"><FaYoutube className='social-icon-child'/></li>
-                                </Link>
-                                <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='link-social'>
-                                    <li className="social-icon"><FaLinkedin className='social-icon-child' /></li>
-                                </Link>
-                                <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='link-social'>
-                                    <li className="social-icon"><RiInstagramFill className='social-icon-child'/></li>
-                                </Link>
+                                <a href='https://www.facebook.com/germinareoficial' target='_blank' className='link-social'>
+                                    <li className="social-icon"><FaFacebook/></li>
+                                </a>
+                                <a href='https://www.youtube.com/channel/UCtfT0wIFhW2jyCMR0ZtBuzg' target='_blank' className='link-social'>
+                                    <li className="social-icon"><FaYoutube/></li>
+                                </a>
+                                <a href='https://www.linkedin.com/company/instituto-germinare/?trk=top_nav_home' target='_blank' className='link-social'>
+                                    <li className="social-icon"><FaLinkedin/></li>
+                                </a>
+                                <a href='https://www.instagram.com/escolagerminare/' target='_blank' className='link-social'>
+                                    <li className="social-icon"><RiInstagramFill/></li>
+                                </a>
                             </ul>
                         </li>
 
