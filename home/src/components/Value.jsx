@@ -6,9 +6,9 @@ const Value = ()=>{
         <>
         <Header>
             <p>
-                <a href="#">Home</a>/ Processo de Admissão 2021/2022
+                <a href="#">Home</a>/ Valores
             </p>
-            <h1>Processo de Admissão 2021/2022</h1>
+            <h1>Valores</h1>
         </Header>     
         <section className="value">
             <img src={valueImg} alt="" />

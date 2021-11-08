@@ -28,5 +28,6 @@ export const Header = styled.div`
         font-weight: 700;
         color: #29305c;
         margin: 40px 0;
+        text-transform: uppercase;
     }
 `;
