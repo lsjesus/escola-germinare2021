@@ -33,7 +33,7 @@ const Nav = ()=>{
     const chevCollabClassActual = ()=>{return !isChevCollabActive ? "turned" : "null"};
 
     return(
-        <div className="nav-wrapper">
+        <div className="nav-wrapper nav-home">
             <div className='nav'>
                 <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className="logo-wrapper"><img src={logo} alt="Logo Escola Germinare" className="logo"/></Link>
                 <button className="burguer-button" onClick={ToggleClass}>
@@ -87,18 +87,22 @@ const Nav = ()=>{
                     </div>
                     <ul className={`submenu ${collabClassActual()}`}>
                         <li>
-                            <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='menu-item'>Minha biblioteca</Link>
+                            <a className='menu-item' href="https://dliportal.zbra.com.br/Login.aspx?key=Germinare">Minha biblioteca</a>
                             <h1 class="hr"></h1>
                         </li>
                         <li>
-                            <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='menu-item'>Agenda Edu</Link>
+                            <a className='menu-item' href="https://agendaedu.com/login/">Agenda Edu</a>
                             <h1 class="hr"></h1>
                         </li>
                         <li>
-                            <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='menu-item'>Árvore de livros</Link>
+                            <a className='menu-item' href="https://www.arvore.com.br/">Árvore de livros</a>
                             <h1 class="hr"></h1>
                         </li>
-                    </ul>    
+                        <li>
+                            <a className='menu-item' href="https://hcm19.sapsf.com/login?company=institutog#/login">AVV</a>
+                            <h1 class="hr"></h1>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </div>

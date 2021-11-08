@@ -38,7 +38,7 @@ const Footer = ()=>{
                             </ul>
                         </li>
                         <li className='item-footer collaborator-li-footer'>
-                            Login
+                            Acesso
                             <ul className='collaborator-footer'>
                                 <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>
                                     <li className='item-footer'>Minha biblioteca</li>
@@ -54,18 +54,18 @@ const Footer = ()=>{
                         <li className='social'>
                             Acompanhe-nos
                             <ul className="social-icons">
-                                <Link className='link-social' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>
+                                <a href='https://www.facebook.com/germinareoficial' target='_blank' className='link-social'>
                                     <li className="social-icon"><FaFacebook/></li>
-                                </Link>
-                                <Link className='link-social' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>
+                                </a>
+                                <a href='https://www.youtube.com/channel/UCtfT0wIFhW2jyCMR0ZtBuzg' target='_blank' className='link-social'>
                                     <li className="social-icon"><FaYoutube/></li>
-                                </Link>
-                                <Link className='link-social' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>
+                                </a>
+                                <a href='https://www.linkedin.com/company/instituto-germinare/?trk=top_nav_home' target='_blank' className='link-social'>
                                     <li className="social-icon"><FaLinkedin/></li>
-                                </Link>
-                                <Link className='link-social' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>
+                                </a>
+                                <a href='https://www.instagram.com/escolagerminare/' target='_blank' className='link-social'>
                                     <li className="social-icon"><RiInstagramFill/></li>
-                                </Link>
+                                </a>
                             </ul>
                         </li>
 

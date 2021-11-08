@@ -108,9 +108,9 @@
     font-size: clamp(20px, calc(20px + 8 * ((100vw - 320px) / 760)), 28px);
 }
 .first-content-container > div > a{
-    animation: pulse 2s 5s  ease-out infinite;
+    animation: pulse3 2s 5s  ease-out infinite;
 }
-@keyframes pulse {
+@keyframes pulse3 {
     0% {
       opacity: 1;
       transform: none;

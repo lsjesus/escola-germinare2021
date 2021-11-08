@@ -8,9 +8,6 @@
   z-index: 98;
   color: white;
 }
-.nav-home{
-  position: fixed;
-}
 .nav {
   width: calc(100%-40px);
   height: 90px;
@@ -254,6 +251,8 @@ p.menu-item {
   }
 
 }
-
+.nav-home{
+  position: fixed;
+}
 
 

@@ -249,6 +249,9 @@ p.menu-item {
   }
 
 }
+.nav-home{
+  position: fixed;
+}
 
 
 

@@ -83,19 +83,23 @@ const Nav = ()=>{
                 </li>
                 <li  className='collaborator-container'>
                     <div onClick={toggleCollabClass} className="title-submenu">
-                        <p className="menu-item"><FaLock size={12} className="lock-icon"/> Login <FiChevronRight size={20} className={`chevron-right ${chevCollabClassActual()}`}/></p>
+                        <p className="menu-item"><FaLock size={12} className="lock-icon"/> Acesso <FiChevronRight size={20} className={`chevron-right ${chevCollabClassActual()}`}/></p>
                     </div>
                     <ul className={`submenu ${collabClassActual()}`}>
                         <li>
-                            <Link className='menu-item' href="#" onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>Minha biblioteca</Link>
+                            <a className='menu-item' href="https://dliportal.zbra.com.br/Login.aspx?key=Germinare">Minha biblioteca</a>
                             <h1 class="hr"></h1>
                         </li>
                         <li>
-                            <Link className='menu-item' href="#" onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>Agenda Edu</Link>
+                            <a className='menu-item' href="https://agendaedu.com/login/">Agenda Edu</a>
                             <h1 class="hr"></h1>
                         </li>
                         <li>
-                            <Link className='menu-item' href="#" onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>Árvore de livros</Link>
+                            <a className='menu-item' href="https://www.arvore.com.br/">Árvore de livros</a>
+                            <h1 class="hr"></h1>
+                        </li>
+                        <li>
+                            <a className='menu-item' href="https://hcm19.sapsf.com/login?company=institutog#/login">AVV</a>
                             <h1 class="hr"></h1>
                         </li>
                     </ul>    

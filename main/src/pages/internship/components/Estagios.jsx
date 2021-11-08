@@ -3,13 +3,14 @@ import { Header } from './Header'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { GiClick } from 'react-icons/gi'
+import { Link } from 'react-router-dom'
 const Estagios = ()=>{
     window.addEventListener('load', function() {AOS.init()})
     return(
         <>
         <Header>
             <p>
-                <a href="#">Home</a>/ Estágios
+                <Link to='/' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>Home</Link>/ Estágios
             </p>
             <h1>Estágios</h1>
         </Header>     

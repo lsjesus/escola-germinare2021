@@ -112,11 +112,11 @@
     right: 5%;
     top: 10%;
     opacity: 0;
-    animation: pulse 2s 14s ease-out infinite;
+    animation: pulse2 2s 14s ease-out infinite;
     animation: name duration timing-function delay iteration-count direction fill-mode;
     fill: #bbbaba;
 }
-@keyframes pulse {
+@keyframes pulse2 {
     0% {
       opacity: 1;
       

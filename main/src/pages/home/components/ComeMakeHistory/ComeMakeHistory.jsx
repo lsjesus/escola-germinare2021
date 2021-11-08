@@ -12,7 +12,7 @@ const ComeMakeHistory = ()=>{
                     <h1>Venha fazer parte da nossa história!</h1>
                     <img src={studentLooking} alt="" />
                     <p>A Escola Germinare forma jovens líderes de negócios de alta performance preparados para a sociedade e o mercado de trabalho. Participe do processo de admissão 2021/2022.</p>
-                    <Link to='/admission'>Inscreva-se</Link>
+                    <Link to='/admission' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>Inscreva-se</Link>
                 </div>
             </div>
             <div className="second-content-container">

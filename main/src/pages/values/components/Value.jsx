@@ -1,14 +1,15 @@
 import './style.css'
 import valueImg from '../assets/joao-neto.png'
-import { Header } from './Header'
+import { Header } from '../../../components/Title/Header'
+import { Link } from 'react-router-dom'
 const Value = ()=>{
     return(
         <>
         <Header>
             <p>
-                <a href="#">Home</a>/ Processo de Admissão 2021/2022
+                <Link to='/' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>Home</Link>/ Valores
             </p>
-            <h1>Processo de Admissão 2021/2022</h1>
+            <h1>Valores</h1>
         </Header>     
         <section className="value">
             <img src={valueImg} alt="" />

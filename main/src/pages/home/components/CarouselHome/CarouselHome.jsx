@@ -100,7 +100,7 @@ const CarouselHome = ()=>{
                 <CarouselItem interval={8000}>
                     <img src={Admissao}  className='carrossel-img admissao-img'></img>
                     <h1 className='carousel-txt admissao'>Processo de Admissão 2021/2022</h1>
-                    <Link to='/admission'><button className='carousel-btn'>Inscreva-se</button></Link>
+                    <Link to='/admission' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}><button className='carousel-btn'>Inscreva-se</button></Link>
                     <a href='#scroll'>
                         <FiChevronsDown className='chevrons'/>
                     </a>
