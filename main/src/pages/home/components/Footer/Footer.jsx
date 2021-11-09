@@ -43,13 +43,13 @@ const Footer = ()=>{
                                 <a href='https://dliportal.zbra.com.br/Login.aspx?key=Germinare' className='link-footer'>
                                     <li className='item-footer'>Minha biblioteca</li>
                                 </a>
-                                <a href='#' className='link-footer'>
+                                <a href='https://agendaedu.com/login/' className='link-footer'>
                                     <li className='item-footer'>Agenda Edu</li>
                                 </a>
-                                <a href='#' className='link-footer'>
+                                <a href='https://www.arvore.com.br/' className='link-footer'>
                                     <li className='item-footer'>Árvore de livros</li>
                                 </a>
-                                <a href='#' className='link-footer'>
+                                <a href='https://hcm19.sapsf.com/login?company=institutog#/login' className='link-footer'>
                                     <li className='item-footer'>AVV</li>
                                 </a>
                             </ul>

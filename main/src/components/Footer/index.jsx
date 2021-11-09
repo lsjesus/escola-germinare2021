@@ -40,15 +40,18 @@ const Footer = ()=>{
                         <li className='item-footer collaborator-li-footer'>
                             Acesso
                             <ul className='collaborator-footer'>
-                                <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>
+                                <a href='https://dliportal.zbra.com.br/Login.aspx?key=Germinare' className='link-footer'>
                                     <li className='item-footer'>Minha biblioteca</li>
-                                </Link>
-                                <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>
+                                </a>
+                                <a href='https://agendaedu.com/login/' className='link-footer'>
                                     <li className='item-footer'>Agenda Edu</li>
-                                </Link>
-                                <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>
+                                </a>
+                                <a href='https://www.arvore.com.br/' className='link-footer'>
                                     <li className='item-footer'>Árvore de livros</li>
-                                </Link>
+                                </a>
+                                <a href='https://hcm19.sapsf.com/login?company=institutog#/login' className='link-footer'>
+                                    <li className='item-footer'>AVV</li>
+                                </a>
                             </ul>
                         </li>
                         <li className='social'>
