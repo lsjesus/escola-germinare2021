@@ -30,6 +30,9 @@
     color: white;
     font-weight: 700;
     padding: 5px;
+    float: none;
+    width: fit-content;
+    
 }
 
 .value > fieldset > p {
@@ -37,6 +40,10 @@
     font-weight: 500;
     font-size: clamp(15px, calc(15px + 7*var(--screen-size)), 22px);
     line-height: 125%;
+    display: flex;
+    min-height: inherit;
+    align-items: center;
+    padding: 12px;
 }
 
 .atitude-de-dono {
