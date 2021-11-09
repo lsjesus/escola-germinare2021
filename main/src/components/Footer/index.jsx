@@ -5,7 +5,7 @@ import './style.css'
 import { Link } from 'react-router-dom'
 const Footer = ()=>{
     return(
-        <footer className='footer'>
+        <footer className='footer' style={{marginTop: "60px"}}>
             <Link to='/'><img src={logo} alt="Logo Oficial Germinare" className='logo-footer' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}/></Link>
             <ul className='footer-menu'>
                         <Link to='/admission' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>
