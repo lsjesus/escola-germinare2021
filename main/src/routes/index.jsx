@@ -4,6 +4,7 @@ import Admission from '../pages/admission/index'
 import Internship from '../pages/internship/index'
 import Values from '../pages/values/index'
 import Certificates from '../pages/certificates/index'
+import academicProject from '../pages/academic-project'
 const Routes = ()=>{
     return(
         <BrowserRouter>
@@ -13,6 +14,7 @@ const Routes = ()=>{
                 <Route path='/internship' component={Internship} />
                 <Route path='/values' component={Values}/>
                 <Route path='/certificates' component={Certificates}/>
+                <Route path='/academic' component={academicProject}/>
             </Switch>
         </BrowserRouter>
     )

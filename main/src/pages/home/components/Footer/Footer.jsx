@@ -32,7 +32,7 @@ const Footer = ()=>{
                                 <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='link-footer'>
                                     <li className='item-footer'>Governança</li>
                                 </Link>
-                                <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='link-footer'>
+                                <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} to='/academic' className='link-footer'>
                                     <li className='item-footer'>Projeto Acadêmico</li>
                                 </Link>
                             </ul>

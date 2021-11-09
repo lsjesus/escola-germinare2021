@@ -1,6 +1,7 @@
 import './style.css'
 import valorespq from '../../assets/valores-pq.png'
 import alunos from '../../assets/alunos-cultura.png'
+import { Link } from 'react-router-dom'
 const Cultura = ()=>{
     return(
         <section className="cultura">
@@ -43,7 +44,7 @@ const Cultura = ()=>{
                                 <li className="item-card-list">Franqueza</li>
                                 <li className="item-card-list">Humildade</li>
                             </ul>
-                            <p className="valores-card-cultura">Quer saber mais sobre nossos valores? <a href="" className='link-valores'>Clique aqui</a></p>
+                            <p className="valores-card-cultura">Quer saber mais sobre nossos valores? <Link to='/values' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='link-valores'>Clique aqui</Link></p>
                         </div>
                     </div>
                 </div>
