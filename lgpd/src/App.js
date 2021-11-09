@@ -1,9 +1,9 @@
-import Estagios from "./components/Estagios";
+import LGPD from "./components/LGPD";
 import './styles/global.css'
 function App() {
   return (
     <div className="App">
-      <Estagios/>
+      <LGPD/>
     </div>
   );
 }
