@@ -12,18 +12,34 @@
     justify-content: space-between;
 }
 
-.gov > div > img {
-    object-fit: cover;
-}
-
 .gov > div > div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-height: 279px;
 }
 
 .gov > div > div > a{
     color: #F7BF0A;
     text-decoration: underline;
     font-weight: 700;
+}
+
+@media (max-width:999px) {
+    .gov > div > img {
+        object-fit: cover;
+        width: 50%;
+    }
+}
+
+@media (max-width:600px) {
+    .gov > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gov > div > img {
+        margin-top: 20px;
+        width: 100%;
+    }
 }
