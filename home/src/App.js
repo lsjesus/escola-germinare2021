@@ -1,9 +1,9 @@
-import AcademicProject from "./AcademicProject"
+import Gov from "./Gov"
 import './styles/global.css'
 function App() {
   return (
     <div className="App">
-      <AcademicProject/>
+      <Gov/>
     </div>
   );
 }
