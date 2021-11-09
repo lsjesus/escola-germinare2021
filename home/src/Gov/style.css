@@ -39,6 +39,7 @@
     }
 
     .gov > div > img {
+        object-fit: fill;
         margin-top: 20px;
         width: 100%;
     }
