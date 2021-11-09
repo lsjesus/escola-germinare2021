@@ -1,11 +1,12 @@
 import './style.css'
 import {Header} from './Header'
+import { Link } from 'react-router-dom'
 const AcademicProject = ()=>{
     return (
         <>
         <Header>
             <p>
-                <a href="#">Home</a>/ Projeto Acadêmico
+                <Link to='/' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>Home</Link>/ Projeto Acadêmico
             </p>
             <h1>Projeto Acadêmico</h1>
         </Header>  
