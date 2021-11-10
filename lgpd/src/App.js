@@ -1,4 +1,4 @@
-import LGPD from "./components/LGPD";
+import LGPD from "./LGPD";
 import './styles/global.css'
 function App() {
   return (
