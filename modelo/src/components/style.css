@@ -164,7 +164,7 @@ input:focus {
         margin-bottom: 50px;
     }
 }
-@media (min-width: 589px) and (max-width: 800px) {
+@media (min-width: 589px) and (max-width: 1080px) {
     .all{
         display: flex;
         flex-direction: column;
