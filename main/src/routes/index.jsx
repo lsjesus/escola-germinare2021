@@ -1,4 +1,4 @@
-import {BrowserRouter,  Route, Switch} from 'react-router-dom'
+import {HashRouter,  Route, Switch} from 'react-router-dom'
 import Home from '../pages/home/index'
 import Admission from '../pages/admission/index'
 import Internship from '../pages/internship/index'
@@ -8,7 +8,7 @@ import Governance from '../pages/governance'
 import academicProject from '../pages/academic-project'
 const Routes = ()=>{
     return(
-        <BrowserRouter>
+        <HashRouter>
             <Switch>
                 <Route path='/' component={Home} exact />
                 <Route path='/admission' component={Admission} />
@@ -19,7 +19,7 @@ const Routes = ()=>{
                 <Route path='/academic' component={academicProject}/>
 
             </Switch>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 export default Routes

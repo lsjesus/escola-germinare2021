@@ -64,6 +64,7 @@
 }
 
 .second-content-container {
+    width: 100vw;
     margin: 0 -20px;
     margin-top: 10px;
     height: fit-content;
