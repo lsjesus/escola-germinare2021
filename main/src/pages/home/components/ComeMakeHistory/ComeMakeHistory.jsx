@@ -24,7 +24,7 @@ const ComeMakeHistory = ()=>{
                 <div>
                     <h1>Jovem Executivo</h1>
                     <p>Saiba mais sobre o projeto acadêmico da Escola Germinare.</p>
-                    <a href="#">Saiba mais</a>
+                    <Link to='/academic' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>Saiba mais</Link>
                 </div>
             </div>
         </section>

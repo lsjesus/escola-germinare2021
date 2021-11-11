@@ -1,12 +1,13 @@
 import './style.css'
 import kitchen from '../assets/a-le.png'
 import {Header} from './Header'
+import { Link } from 'react-router-dom'
 const Gov = ()=>{
     return (
         <>
         <Header>
             <p>
-                <a href="#">Home</a>/ Governança
+                <Link to='/'>Home</Link>/ Governança
             </p>
             <h1>Governança</h1>
         </Header>  
