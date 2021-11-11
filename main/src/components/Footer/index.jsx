@@ -5,7 +5,7 @@ import './style.css'
 import { Link } from 'react-router-dom'
 const Footer = ()=>{
     return(
-        <footer className='footer'>
+        <footer className='footer' style={{marginTop: "60px"}}>
             <Link to='/'><img src={logo} alt="Logo Oficial Germinare" className='logo-footer' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}/></Link>
             <ul className='footer-menu'>
                         <Link to='/admission' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>
@@ -32,7 +32,7 @@ const Footer = ()=>{
                                 <Link to='/governance' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>
                                     <li className='item-footer'>Governança</li>
                                 </Link>
-                                <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>
+                                <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} to='/academic'>
                                     <li className='item-footer'>Projeto Acadêmico</li>
                                 </Link>
                             </ul>
@@ -40,15 +40,18 @@ const Footer = ()=>{
                         <li className='item-footer collaborator-li-footer'>
                             Acesso
                             <ul className='collaborator-footer'>
-                                <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>
+                                <a href='https://dliportal.zbra.com.br/Login.aspx?key=Germinare' className='link-footer'>
                                     <li className='item-footer'>Minha biblioteca</li>
-                                </Link>
-                                <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>
+                                </a>
+                                <a href='https://agendaedu.com/login/' className='link-footer'>
                                     <li className='item-footer'>Agenda Edu</li>
-                                </Link>
-                                <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>
+                                </a>
+                                <a href='https://www.arvore.com.br/' className='link-footer'>
                                     <li className='item-footer'>Árvore de livros</li>
-                                </Link>
+                                </a>
+                                <a href='https://hcm19.sapsf.com/login?company=institutog#/login' className='link-footer'>
+                                    <li className='item-footer'>AVV</li>
+                                </a>
                             </ul>
                         </li>
                         <li className='social'>
