@@ -1,9 +1,9 @@
-import Routes from './routes/index';
+import Donation from './components/Donation/Donation';
 import './styles/global.css'
 function App() {
   return (
     <div className="App">
-      <Routes/>
+      <Donation/>
     </div>
   );
 }
