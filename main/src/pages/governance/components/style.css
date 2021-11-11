@@ -1,0 +1,47 @@
+.gov {
+    width: calc(100%-40px);
+    padding: 0 20px;
+}
+
+.gov > p {
+    margin-bottom: 20px;
+    line-height: 125%;
+}
+
+.gov > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gov > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 279px;
+}
+
+.gov > div > div > a{
+    color: #F7BF0A;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+@media (max-width:999px) {
+    .gov > div > img {
+        object-fit: cover;
+        width: 50%;
+    }
+}
+
+@media (max-width:600px) {
+    .gov > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gov > div > img {
+        object-fit: fill;
+        margin-top: 20px;
+        width: 100%;
+    }
+}

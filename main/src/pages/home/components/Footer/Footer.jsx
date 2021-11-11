@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import './style-footer.css'
 const Footer = ()=>{
     return(
-        <footer className='footer footer-home'>
+        <footer className='footer-home footer'>
             <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} to='/'><img src={logo} alt="Logo Oficial Germinare" className='logo-footer' /></Link>
             <ul className='footer-menu'>
                         <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} to='/admission' className='link-footer'>
@@ -29,7 +29,7 @@ const Footer = ()=>{
                                 <Link to='/certificates' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='link-footer'>
                                     <li className='item-footer'>Certificados</li>
                                 </Link>
-                                <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='link-footer'>
+                                <Link to='/governance' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='link-footer'>
                                     <li className='item-footer'>Governança</li>
                                 </Link>
                                 <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='link-footer'>

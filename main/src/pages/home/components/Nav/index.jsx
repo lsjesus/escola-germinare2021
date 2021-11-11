@@ -72,7 +72,7 @@ const Nav = ()=>{
                             <Link to='/certificates' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='menu-item'>Certificados</Link>
                             <h1 class="hr"></h1></li>
                         <li>
-                            <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='menu-item'>Governança</Link>
+                            <Link to='/governance' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='menu-item'>Governança</Link>
                             <h1 class="hr"></h1>
                         </li>
                         <li>

@@ -29,7 +29,7 @@ const Footer = ()=>{
                                 <Link to='/certificates' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>
                                     <li className='item-footer'>Certificados</li>
                                 </Link>
-                                <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>
+                                <Link to='/governance' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>
                                     <li className='item-footer'>Governança</li>
                                 </Link>
                                 <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>
