@@ -20,9 +20,9 @@ const LGPD = ()=>{
         <>
         <Header>
             <p>
-                <Link to='/'>Home</Link>/ Governança
+                <Link to='/'>Home</Link>/ LGPD
             </p>
-            <h1>Governança</h1>
+            <h1>LGPD</h1>
         </Header>
         <div className="red-rectangle"></div>
         <section className="lgpd">
@@ -32,7 +32,7 @@ const LGPD = ()=>{
                 <br/>Temos como nosso compromisso presevar a sua privacidade e proteger seus dados pessoais. Coletamos seus dados para prestar a você nossos serviços adequada e eficientemente.
             </p>
             <p className="outer-text">Tratamos quaisquer dados ou informações coletadas sobre você de forma  confidencial e apenas as utilizaremos para os fins descritos nessa Política de Privacidade e/ou autorizado por você, e buscamos redigir essa política de forma mais simples e acessível possível, para que você possa realizar uma leitura agradável e entender como realizamos o tratamento de seus dados. </p>
-            <p>Caso você tenha qualquer dúvida sobre como tratamos seus dados ou sobre esta Política de Privacidade, entre em contato no nosso <a href="#" className="fale-conosco-link">fale conosco</a>.</p>
+            <p>Caso você tenha qualquer dúvida sobre como tratamos seus dados ou sobre esta Política de Privacidade, entre em contato no nosso <Link to='/contact' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className="fale-conosco-link">fale conosco</Link>.</p>
             <h3>Listamos abaixo algumas das finalidades as quais poderemos tratar os seus dados pessoais:</h3>
 
             <div>

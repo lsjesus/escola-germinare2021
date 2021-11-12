@@ -17,7 +17,7 @@ const Footer = ()=>{
                         <Link to='/contact' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='link-footer'>
                             <li className='item-footer'>Contato</li>
                         </Link>
-                        <Link to='/contact' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='link-footer'>
+                        <Link to='/lgpd' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className='link-footer'>
                             <li className='item-footer'>LGPD</li>
                         </Link>
                         <li className='item-footer about-us-li'>

@@ -3,7 +3,7 @@ import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
 const lgpd = ()=>{
     return(
-        <div className='lgpd'>
+        <div className='LGPD'>
         <Nav/>
         <LGPD/>
         <Footer/>
