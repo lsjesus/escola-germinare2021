@@ -48,7 +48,7 @@ const Nav = ()=>{
                     <h1 class="hr"></h1>
                 </li>
                 <li>
-                    <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className="menu-item">Doação</Link>
+                    <Link to='/donation' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className="menu-item">Doação</Link>
                     <h1 class="hr"></h1>
                 </li>
                 <li>

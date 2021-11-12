@@ -6,6 +6,7 @@ import Values from '../pages/values/index'
 import Certificates from '../pages/certificates/index'
 import Governance from '../pages/governance'
 import academicProject from '../pages/academic-project'
+import Donation from '../pages/donation'
 const Routes = ()=>{
     return(
         <HashRouter>
@@ -17,6 +18,7 @@ const Routes = ()=>{
                 <Route path='/certificates' component={Certificates}/>
                 <Route path='/governance' component={Governance}/>
                 <Route path='/academic' component={academicProject}/>
+                <Route path='/donation' component={Donation}/>
 
             </Switch>
         </HashRouter>

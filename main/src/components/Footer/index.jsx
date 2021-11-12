@@ -11,7 +11,7 @@ const Footer = ()=>{
                         <Link to='/admission' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>
                             <li className='item-footer'>Admissão 2021/2022</li>
                         </Link>
-                        <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>
+                        <Link to='/donation' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>
                             <li className='item-footer'>Doação</li>
                         </Link>
                         <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>
