@@ -32,7 +32,7 @@ const AcademicProject = ()=>{
                     <ul>
                         <li>Matemática</li>
                         <li>Geometria</li>
-                        <li>Lógico</li>
+                        <li>Lógica</li>
                         <li>Estatística</li>
                     </ul>
                 </div>

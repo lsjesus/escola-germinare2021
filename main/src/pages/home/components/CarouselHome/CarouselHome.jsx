@@ -27,57 +27,6 @@ const CarouselHome = ()=>{
     }
     return(
         <>
-            {/* <header className='header'>
-                <img src={logo} alt="Logo Escola Germinare" className='logo'/>
-                <nav className='navigation'>
-                    <ul className='menu'>
-                        <a href="">
-                            <li className='item-menu' className='admissao' >Admissão 2021/2022</li>
-                        </a>
-                        <a href="">
-                            <li className='item-menu'>Doação</li>
-                        </a>
-                        <a href="">
-                            <li className='item-menu'>Contato</li>
-                        </a>
-                        <li className='item-menu about-us-li'>
-                            Sobre nós
-                            <ul className='about-us'>
-                                <a href="">
-                                    <li className='item-menu'>Valores</li>
-                                </a>
-                                <a href="">
-                                    <li className='item-menu'>Estágios</li>
-                                </a>
-                                <a href="">
-                                    <li className='item-menu'>Certificados</li>
-                                </a>
-                                <a href="">
-                                    <li className='item-menu'>Governança</li>
-                                </a>
-                                <a href="">
-                                    <li className='item-menu'>Projeto Acadêmico</li>
-                                </a>
-                            </ul>
-                        </li>
-                        <li className='item-menu collaborator-li'>
-                            <FaLock className='lock'/> Login
-                            <ul className='collaborator'>
-                                <a href="">
-                                    <li className='item-menu'>Minha biblioteca</li>
-                                </a>
-                                <a href="">
-                                    <li className='item-menu'>Agenda Edu</li>
-                                </a>
-                                <a href="">
-                                    <li className='item-menu'>Árvore de livros</li>
-                                </a>
-                            </ul>
-                        </li>
-
-                    </ul>
-                </nav>
-            </header> */}
             <Carousel className='carouselzin'>
                 <CarouselItem interval={8000}>
                     <img src={Giroto} className='carrossel-img'></img>

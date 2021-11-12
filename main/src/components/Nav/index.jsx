@@ -52,7 +52,7 @@ const Nav = ()=>{
                     <h1 class="hr"></h1>
                 </li>
                 <li>
-                    <Link className="menu-item" onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>Contato</Link>
+                    <Link to='/contact' className="menu-item" onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>Contato</Link>
                     <h1 class="hr"></h1>
                 </li>
                 <li className='about-us-container'>

@@ -270,7 +270,7 @@
 .carousel-txt{
   position: absolute;
   width: auto;
-  max-width: 729px;
+  max-width: 829px;
   top: 40%;
   left: 6%;
   color: #FFFFFF;
@@ -366,7 +366,7 @@
         .carousel-txt{
           font-size: 18px;
           top: 48%;
-          max-width: 180px;
+          max-width: 200px;
         }
         .carousel-btn{
           top: 68%;
@@ -386,6 +386,11 @@
         }
         .katia{
           transform: translateX(-200px);
+        }
+        @media only screen and (max-width: 360px){
+          .carousel-txt{
+            max-width: 180px;
+          }
         }
       }
     }

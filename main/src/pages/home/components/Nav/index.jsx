@@ -35,7 +35,7 @@ const Nav = ()=>{
     return(
         <div className="nav-wrapper nav-home">
             <div className='nav'>
-                <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className="logo-wrapper"><img src={logo} alt="Logo Escola Germinare" className="logo"/></Link>
+                <Link to='/' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className="logo-wrapper"><img src={logo} alt="Logo Escola Germinare" className="logo"/></Link>
                 <button className="burguer-button" onClick={ToggleClass}>
                     <div className={`hamburguer-menu ${menuActualClass()} ret-top`}></div>
                     <div className={`hamburguer-menu ${menuActualClass()} ret-middle`}></div>
@@ -52,7 +52,7 @@ const Nav = ()=>{
                     <h1 class="hr"></h1>
                 </li>
                 <li>
-                    <Link onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className="menu-item">Contato</Link>
+                    <Link to='/contact' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}} className="menu-item">Contato</Link>
                     <h1 class="hr"></h1>
                 </li>
                 <li className='about-us-container'>
