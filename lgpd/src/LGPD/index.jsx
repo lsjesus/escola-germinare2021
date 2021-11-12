@@ -23,7 +23,8 @@ const LGPD = ()=>{
                 <a href="#">Home</a>/ Governança
             </p>
             <h1>Governança</h1>
-        </Header>  
+        </Header>
+        <div className="red-rectangle"></div>
         <section className="lgpd">
             <h2>Nosso compromisso com Privacidade e Proteção de Dados</h2>
             <p> 
