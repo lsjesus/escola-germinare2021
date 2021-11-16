@@ -57,7 +57,7 @@
   flex-direction: column;
   background: #001489;
   transition: all 2s linear;
-  line-height: 1.5;
+  line-height: 1;
   overflow:hidden;
   max-height: 0px;
   transition: max-height 1s ease-in-out;
@@ -120,6 +120,7 @@
   padding: 0 2.5px ;
   margin-left: 20px;
   flex-direction: column;
+  row-gap: 10px;
   transition: all 0.5s ease-out;
   overflow:hidden;
   max-height: 0px;
