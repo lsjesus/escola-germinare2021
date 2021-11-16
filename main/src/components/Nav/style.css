@@ -57,7 +57,7 @@
   flex-direction: column;
   background: #001489;
   transition: all 2s linear;
-  line-height: 1;
+  line-height: 1.5;
   overflow:hidden;
   max-height: 0px;
   transition: max-height 1s ease-in-out;
@@ -120,7 +120,6 @@
   padding: 0 2.5px ;
   margin-left: 20px;
   flex-direction: column;
-  row-gap: 10px;
   transition: all 0.5s ease-out;
   overflow:hidden;
   max-height: 0px;
@@ -195,6 +194,7 @@ p.menu-item {
   }
 
   .menu {
+    line-height: 1.5;
     position: static;
     max-height: 90px;
     display: flex;
@@ -211,6 +211,7 @@ p.menu-item {
   }
 
   .submenu {
+    row-gap: 10px;
     margin-left: 0;
     max-height: 0px;
     position: absolute;
