@@ -39,7 +39,7 @@ const Value = ()=>{
             </fieldset>
             <fieldset>
                 <legend className="humildade">Humildade</legend>
-                <p>É direto, sincero, verdadeiro e transparente em suas relações, sempre com respeito, de forma positiva, agregadora e acolhedora. Não se omite, expressa suas opiniões mesmo quando contrária aos demais. Sabe dizer não.</p>
+                <p>Sabe ouvir, é atencioso, considera a opinião dos outros, não importa quem fez, importa que fizemos. Não tem vergonha de perguntar nem de dizer que não sabe. Não é arrogante nem vaidoso e age com respeito. Não se preocupa com status nem se acha dono da verdade. Prioriza o nós e não o eu.</p>
             </fieldset>
         </section>
         </>
