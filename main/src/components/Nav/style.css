@@ -121,6 +121,7 @@
   margin-left: 20px;
   flex-direction: column;
   transition: all 0.5s ease-out;
+  line-height: 1.2;
   overflow:hidden;
   max-height: 0px;
   transition: max-height 1s ease-in-out;
@@ -194,7 +195,7 @@ p.menu-item {
   }
 
   .menu {
-    line-height: 1.5;
+    line-height: 1;
     position: static;
     max-height: 90px;
     display: flex;

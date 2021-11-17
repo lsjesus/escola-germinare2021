@@ -5,6 +5,7 @@ import { useState } from 'react'
 import {FaLock} from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 const Nav = ()=>{
+
     const [isActive, setActive] = useState("true");
     const [isMenuActive, setMenuActive] = useState("true");
     const [isAboutActive, setAboutActive] = useState("true");
