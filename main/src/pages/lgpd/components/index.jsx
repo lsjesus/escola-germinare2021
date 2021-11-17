@@ -72,7 +72,7 @@ const LGPD = ()=>{
                 </div>
                 <div className={`data-box cookies ${classSecActual()}`}>
                     <p>
-                        Cookies estão inclusos em nossos sites para distinguir usuários únicos, atribuindo um número gerao aleatoriamente como um identificador para calcular o acesso dos visitantes para relatórios analíticos, e poder entender melhor suas necessidades e interesses, oferecendo um melhor serviço ou informações relacionadas. Por padrão, ele é definido para expirar.
+                        Cookies estão inclusos em nossos sites para distinguir usuários únicos, atribuindo um número gerado aleatoriamente como um identificador para calcular o acesso dos visitantes para relatórios analíticos bem como para poder entender melhor suas necessidades e interesses, oferecendo um melhor serviço ou informações relacionadas. Por padrão, ele é definido para expirar.
                     </p>
                 </div>
             </div>
