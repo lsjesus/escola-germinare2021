@@ -50,7 +50,7 @@ const Model = ()=>{
             </div>
           </section>
         <section className="media">
-          <img src={image} alt="" className="image" />
+          <img src={image} alt="Diretoras pedagógica e psicóloga recebendo alunas" className="image" />
           <iframe className='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d228.65912199965962!2d-46.73203770541648!3d-23.512858447443502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8dcf5efb1cd%3A0xcc322969008a3e57!2sInstituto%20Germinare!5e0!3m2!1spt-BR!2sbr!4v1635961467984!5m2!1spt-BR!2sbr" width="500" height="335" allowfullscreen="" loading="lazy"></iframe>
         </section>
       </section>
@@ -64,7 +64,7 @@ const Model = ()=>{
             <input type="email" className="form-control" placeholder="Digite seu e-mail (obrigatório)" required/>
           </div>
 					<div class="form-container">
-            <input onSubmit={()=>{console.log('a')}} type="text" name="motivo" className="form-control" placeholder="Digite o motivo do contato (obrigatório)" required/>
+            <input onSubmit={()=> {console.log('a')}} type="text" name="motivo" className="form-control" placeholder="Digite o motivo do contato (obrigatório)" required/>
           </div>
 					<div class="form-container">
           <textarea className="form-control message" cols="40" rows="10" placeholder="Digite sua mensagem"></textarea>

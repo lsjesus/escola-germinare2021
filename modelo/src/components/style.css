@@ -69,8 +69,6 @@
     max-width: 504px;
     max-height: 334px;
 }
-
-
 .form-title {
     color: #001489;
     font-size: 28px;
@@ -81,10 +79,8 @@
     width: 100%;
     padding: 15px 20px;
     box-sizing: border-box;
-    background-color:white;
     margin-bottom: 35px;
     border-color: #5E61E6;
-    box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
     font-weight: 400;
