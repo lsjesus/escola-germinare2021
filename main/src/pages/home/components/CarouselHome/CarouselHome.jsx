@@ -31,7 +31,10 @@ const CarouselHome = ()=>{
                 <CarouselItem interval={8000}>
                     <img src={Giroto} className='carrossel-img'></img>
                     <h1 className='carousel-txt giroto'>Há mais de uma década germinando líderes.</h1>
-                    <a href='#scroll'>
+                    <a href='' onClick={(event)=>{
+                        event.preventDefault()
+                        const scroll = document.getElementById("scroll")
+                        window.scrollTo(0, scroll.getBoundingClientRect().top)}}>
                         <FiChevronsDown className='chevrons'/>
                     </a>
             
@@ -42,7 +45,10 @@ const CarouselHome = ()=>{
                         <img src={Cleuton}  className='carrossel-img katia'></img>
                     </picture>
                     <h1 className='carousel-txt cleuton'>Totalmente <strong>gratuita</strong> e <strong>digital</strong>.</h1>
-                    <a href='#scroll'>
+                    <a href='' onClick={(event)=>{
+                        event.preventDefault()
+                        const scroll = document.getElementById("scroll")
+                        window.scrollTo(0, scroll.getBoundingClientRect().top)}}>
                         <FiChevronsDown className='chevrons'/>
                     </a>
                 </CarouselItem >
@@ -50,7 +56,10 @@ const CarouselHome = ()=>{
                     <img src={Admissao}  className='carrossel-img admissao-img'></img>
                     <h1 className='carousel-txt admissao'>Processo de Admissão 2021/2022</h1>
                     <Link to='/admission' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}><button className='carousel-btn'>Inscreva-se</button></Link>
-                    <a href='#scroll'>
+                    <a href='' onClick={(event)=>{
+                        event.preventDefault()
+                        const scroll = document.getElementById("scroll")
+                        window.scrollTo(0, scroll.getBoundingClientRect().top)}}>
                         <FiChevronsDown className='chevrons'/>
                     </a>
                 </CarouselItem >
@@ -58,7 +67,10 @@ const CarouselHome = ()=>{
                     <img src={Universidade} className='carrossel-img'></img>
                     <h1 className='carousel-txt universidade'>Venha se graduar em nossa Faculdade.</h1>
                     <button className='carousel-btn'>Saiba Mais</button>
-                    <a href='#scroll'>
+                    <a href='' onClick={(event)=>{
+                        event.preventDefault()
+                        const scroll = document.getElementById("scroll")
+                        window.scrollTo(0, scroll.getBoundingClientRect().top)}}>
                         <FiChevronsDown className='chevrons'/>
                     </a>
                 </CarouselItem>
