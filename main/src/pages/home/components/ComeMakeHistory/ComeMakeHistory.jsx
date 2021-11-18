@@ -19,7 +19,7 @@ const ComeMakeHistory = ()=>{
                 <div>
                     <h1>Seja um Amigo Germinare</h1>
                     <p>Saiba mais como apoiar o projeto Germinare. </p>
-                    <a href="#">Saiba mais</a>
+                    <Link to='/donation' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>Saiba mais</Link>
                 </div>
                 <div>
                     <h1>Jovem Executivo</h1>
