@@ -28,7 +28,7 @@ const CarouselHome = ()=>{
     return(
         <>
             <Carousel className='carouselzin'>
-                <CarouselItem interval={8000}>
+                <CarouselItem interval={5000}>
                     <img src={Giroto} className='carrossel-img'></img>
                     <h1 className='carousel-txt giroto'>Há mais de uma década germinando líderes.</h1>
                     <a href='' onClick={(event)=>{
@@ -39,7 +39,7 @@ const CarouselHome = ()=>{
                     </a>
             
                 </CarouselItem>
-                <CarouselItem  interval={8000}>
+                <CarouselItem  interval={5000}>
                     <picture>
                         <source media="(max-width: 605px)" srcset={Cleutonpq} />
                         <img src={Cleuton}  className='carrossel-img katia'></img>
@@ -52,7 +52,7 @@ const CarouselHome = ()=>{
                         <FiChevronsDown className='chevrons'/>
                     </a>
                 </CarouselItem >
-                <CarouselItem interval={8000}>
+                <CarouselItem interval={5000}>
                     <img src={Admissao}  className='carrossel-img admissao-img'></img>
                     <h1 className='carousel-txt admissao'>Processo de Admissão 2021/2022</h1>
                     <Link to='/admission' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}><button className='carousel-btn'>Inscreva-se</button></Link>
@@ -63,7 +63,7 @@ const CarouselHome = ()=>{
                         <FiChevronsDown className='chevrons'/>
                     </a>
                 </CarouselItem >
-                <CarouselItem  interval={8000}>
+                <CarouselItem  interval={5000}>
                     <img src={Universidade} className='carrossel-img'></img>
                     <h1 className='carousel-txt universidade'>Venha se graduar em nossa Faculdade.</h1>
                     <button className='carousel-btn'>Saiba Mais</button>
