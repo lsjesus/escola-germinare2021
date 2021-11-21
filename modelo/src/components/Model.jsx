@@ -1,12 +1,77 @@
 import './style.css'
 import image from '../assets/imagem.jpeg'
 import {Header} from './Header'
+import { useState } from 'react'
 
 const Model = ()=>{
+/*
+  function changeColor(id){
+    id = "name subject"
+    document.getElementById(id).classList.toggle('incorrect')
+  }
+*/
   function cleanForm(event) {
     event.preventDefault()
     document.getElementById("formjs").reset();
+    setNameValue('')
+    setSubjectValue('')
   }
+
+  function validateName(name) {
+    const letters = /^[A-Za-záàâãéèêíïóôõöúçñüÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑÜ ]+$/;
+    let errorsurname = false;
+    let errorname = false;
+    const design = document.getElementById('name').style
+
+    if (!letters.test(name)) {
+      document.getElementById('error-name').style.display = "block";
+      errorname = true;
+        }
+    else {
+      document.getElementById('error-name').style.display = "none";
+    }
+    if (name.includes(" ") && letters.test(name.split(" ")[1])) {
+      document.getElementById('error-surname').style.display = "none"; 
+    }
+    else {
+      document.getElementById('error-surname').style.display = "block";
+      errorsurname = true;
+    }
+    if (errorsurname || errorname) {
+      design.border = "solid 5px red";
+      design.background = "#ffdddd";
+      
+    }
+    else {
+      design.border = "2px solid #5E61E6"
+      design.background = "white"
+    }
+  }
+
+  function validateSubject(validation) {
+    const letters = /^[0-9\s]*$/g;
+    let errorsubject = false;
+    const design = document.getElementById('subject').style;
+    
+    if (letters.test(validation)) {
+      document.getElementById('error-subject').style.display = "block";
+      errorsubject = true;
+    }
+    else {
+      document.getElementById('error-subject').style.display = "none";
+    }
+    if (errorsubject) {
+      design.border = "solid 5px red";
+      design.background = "#ffdddd";
+  }
+  else {
+    design.border = "2px solid #5E61E6"
+    design.background = "white"
+  }
+}
+  const [valoresNome, setNameValue] = useState('')
+  const [valoresMotivo, setSubjectValue] = useState('')
+
   return(
   <>
       <Header>
@@ -15,6 +80,7 @@ const Model = ()=>{
     </p>
     <h1>CONTATO</h1>
   </Header>
+  
   <main className='all'>
     <section className='infos'>
       <section className="t1">
@@ -58,16 +124,25 @@ const Model = ()=>{
         <h1 className="form-title">Formulário de Contato</h1>
         <form id='formjs' >
           <div class="form-container">
-            <input type="text" className="form-control" placeholder="Digite seu nome (obrigatório)" required/>
+            <input value={valoresNome} onChange= {(e) => {
+              validateName(e.target.value)
+              setNameValue(e.target.value)
+            }} type="text" className="form-control" id='name' placeholder="Digite seu nome (obrigatório)" required/>
+            <span id="error-name">O nome não pode conter caracteres especiais (números).</span>
+            <span id="error-surname">Sobrenome é necessário.</span>
           </div>
 					<div class="form-container">
             <input type="email" className="form-control" placeholder="Digite seu e-mail (obrigatório)" required/>
           </div>
 					<div class="form-container">
-            <input onSubmit={()=> {console.log('a')}} type="text" name="motivo" className="form-control" placeholder="Digite o motivo do contato (obrigatório)" required/>
+            <input onChange= {(e) => {
+              validateSubject(e.target.value)
+              setSubjectValue(e.target.value)
+            }} value={valoresMotivo} id="subject" type="text" name="motivo" className="form-control" placeholder="Digite o motivo do contato (obrigatório)" required/>
+          <span id="error-subject">É necessário pelo menos uma letra.</span>
           </div>
 					<div class="form-container">
-          <textarea className="form-control message" cols="40" rows="10" placeholder="Digite sua mensagem"></textarea>
+          <textarea className="form-control message" cols="40" rows="10" placeholder="Digite sua mensagem (obrigatório)" required></textarea>
           </div>					
           <div className="buttons">
             <button onClick={cleanForm} value="Reset" className="buttonLimpar">Limpar</button>
