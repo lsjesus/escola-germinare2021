@@ -1,5 +1,5 @@
 import './style.css'
-import { Header } from './Header'
+import {Header} from '../../../components/Title-2/Header'
 import unesco from '../assets/unesco.png'
 import cmdca from '../assets/cmdca.png'
 import cebas from '../assets/cebas.png'

@@ -9,8 +9,6 @@ margin-top: 140px;
         font-size: clamp(12px, calc(12px + 4 * (100vw - 320px)/760) ,16px);
         margin-top: 30px;
         height: 48px;
-        border-bottom: 5px solid #5E61E6;
-        border-top: 5px solid #5E61E6;
         font-weight: bold;
         display: flex;
         align-items: center;

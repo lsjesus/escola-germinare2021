@@ -1,6 +1,6 @@
 import './style.css'
 import image from '../assets/imagem.jpeg'
-import {Header} from './Header'
+import {Header} from '../../../components/Title-2/Header'
 
 const Model = ()=>{
   function cleanForm(event) {

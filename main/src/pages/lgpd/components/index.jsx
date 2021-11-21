@@ -1,5 +1,5 @@
 import './style.css'
-import {Header} from './Header'
+import {Header} from '../../../components/Title-2/Header'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 const LGPD = ()=>{

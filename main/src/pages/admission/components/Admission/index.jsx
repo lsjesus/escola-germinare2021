@@ -1,6 +1,6 @@
 import alunos from '../../assets/alunos.png'
 import './style.css'
-import { Header } from '../../../../components/Title/Header'
+import {Header} from '../../../../components/Title-2/Header'
 import { Link } from 'react-router-dom'
 const Main = ()=>{
     return(

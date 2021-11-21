@@ -1,7 +1,7 @@
 import './style-donation.css'
 import qrcode from '../assets/qrcode.png'
 import logo_branco2 from '../assets/logo_branco2.png'
-import { Header } from './Header'
+import {Header} from '../../../components/Title-2/Header'
 import { Link } from 'react-router-dom'
 const Donation = () => {
     return(

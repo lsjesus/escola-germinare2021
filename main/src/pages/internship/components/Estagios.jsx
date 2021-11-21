@@ -1,5 +1,5 @@
 import './style.css'
-import { Header } from './Header'
+import {Header} from '../../../components/Title-2/Header'
 import AOS from 'aos'
 import '../../../styles/format-aos.css'
 import { GiClick } from 'react-icons/gi'
