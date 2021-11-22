@@ -83,7 +83,7 @@ const Nav = ()=>{
                 </li>
                 <li  className='collaborator-container'>
                     <div onClick={toggleCollabClass} className="title-submenu">
-                        <p className="menu-item"><FaLock size={12} className="lock-icon"/> Acesso <FiChevronRight size={20} className={`chevron-right ${chevCollabClassActual()}`}/></p>
+                        <p className="menu-item" ><FaLock size={12} className="lock-icon"/> Acesso <FiChevronRight size={20} className={`chevron-right ${chevCollabClassActual()}`}/></p>
                     </div>
                     <ul className={`submenu ${collabClassActual()}`}>
                         <li>

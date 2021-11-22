@@ -38,6 +38,8 @@ body {
 }
 ol, ul {
 	list-style: none;
+	padding-left: 0;
+	
 }
 blockquote, q {
 	quotes: none;
@@ -54,3 +56,40 @@ table {
 .internship, .values, .certificates, .Academic, .Governance, .Donation, .Contact, .LGPD{
 	margin-top: 130px;
 }
+.lazy{
+	background-color: #202266;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.lazy-logo{
+	margin-top: -50px;
+	display: block;
+	max-width: 80%;
+	transform: scale(.7);
+}
+.loader {
+	margin-top: 5px;
+	border: 8px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 8px solid #3498db;
+	width: 60px;
+	height: 60px;
+	-webkit-animation: spin 2s linear infinite; /* Safari */
+	animation: spin 2s linear infinite;
+	
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+  }

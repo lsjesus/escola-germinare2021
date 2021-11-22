@@ -16,6 +16,7 @@ const Home = ()=>{
       <ComeMakeHistory/>
       <Footer/>
     </div>
+
   )
    
 
