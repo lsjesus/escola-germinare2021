@@ -10,7 +10,7 @@ import '../../../../styles/format-aos.css'
 const Academias = ()=>{
     window.addEventListener('load', function() {AOS.init()})
     window.onscroll = function() {
-        const footer = document.querySelector('.footer-home')
+        const footer = document.querySelector('.footer')
         if (footer!=null){
             const topfooter = footer.getBoundingClientRect().top
             if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 324){
