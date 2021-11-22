@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Cultura = ()=>{
     return(
         <section className="cultura">
-            <h1 className="hr-cultura" data-aos='fade-right' data-aos-duration='750' data-aos-ease='ease-in-out'></h1>
+            <h1 className="hr-cultura" data-aos='fade-right' data-aos-duration='1700' data-aos-ease='ease-in-out'></h1>
             <div className="title-container-cultura">
                 <h1 className='cultura-title'>Cultura</h1>
                 

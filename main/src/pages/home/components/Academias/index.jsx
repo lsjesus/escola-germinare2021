@@ -30,7 +30,7 @@ const Academias = ()=>{
     return(
         <section data-aos="fade-up" className="academias aos-init aos-animate" data-aos-duration="400"
         data-aos-easing="ease-in-out">
-            <h1 className="hr-cultura" data-aos='fade-right' data-aos-duration='750' data-aos-ease='ease-in-out'></h1>
+            <h1 className="hr-cultura" data-aos='fade-right' data-aos-duration='1700' data-aos-ease='ease-in-out'></h1>
             <h1 className='academias-title'>Academias de Ensino</h1>
 
             <p className="academias-subtitle">Conheça nossas áreas de educação.</p>
