@@ -6,12 +6,15 @@ export const Header = styled.div`
 
     p {
         width: fit-content;
-        border-bottom: #2E3192 0.25px solid;
-        font-size:10px;
+        border-bottom: #5E61E6 2px solid;
+        padding-bottom: 10px;
+        font-size:17px;
         margin-top: 30px;
         font-weight: bold;
-        display: flex;
+        display: none;
         align-items: center;
+        margin-bottom: 30px;
+        width: 200px;
 
         a {
         text-decoration: none;

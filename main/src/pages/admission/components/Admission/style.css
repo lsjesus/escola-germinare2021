@@ -1,5 +1,4 @@
 .main{
-    padding: 20px;
     padding-bottom: 0;
 }
 .title{
@@ -10,7 +9,8 @@
 }
 
 .container-adm{
-    padding: 0 20px 50px 20px;
+    padding: 0 20px;
+    padding-bottom: 100px;
     /* width: calc(100% - 40px); */
     display: flex;
     justify-content: center;
@@ -19,7 +19,6 @@
 }
 
 .info{
-    height: 490px;
     width: fit-content;
     line-height: 125%;
     font-size: 16px;
