@@ -7,7 +7,6 @@ const Cultura = ()=>{
         <section className="cultura">
             <div className="title-container-cultura">
                 <h1 className='cultura-title'>Cultura</h1>
-                <img src={valorespq} alt="valores" className="valorespq" />
             </div>
             <div className="container-cards-img">
                 <img src={alunos} alt="alunos germinare" className="alunos-cultura" />
