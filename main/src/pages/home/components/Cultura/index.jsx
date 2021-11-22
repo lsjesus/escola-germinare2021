@@ -5,9 +5,12 @@ import { Link } from 'react-router-dom'
 const Cultura = ()=>{
     return(
         <section className="cultura">
+            <h1 className="hr-cultura" data-aos='fade-right' data-aos-duration='750' data-aos-ease='ease-in-out'></h1>
             <div className="title-container-cultura">
                 <h1 className='cultura-title'>Cultura</h1>
+                
             </div>
+           
             <div className="container-cards-img">
                 <img src={alunos} alt="alunos germinare" className="alunos-cultura" />
                 <div className="cards-cultura">

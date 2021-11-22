@@ -3,7 +3,7 @@
     margin-bottom: 30px;
 }
 .cultura-title{
-    color: blue;
+    color: #001489;
     font-size: 32px;
     font-weight: 700;
     text-transform: uppercase;
@@ -115,4 +115,9 @@
     .card-cultura{
         margin: 20px;
     }
+}
+.hr-cultura{
+    border-top: 4px solid #5E60E6;
+    width: 146px;
+    margin-bottom: 15px;
 }
