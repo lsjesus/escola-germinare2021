@@ -5739,7 +5739,7 @@ fieldset:disabled .btn {
   margin-right: -100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  transition: transform .8s ease-in-out;
+  transition: transform 0.6s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
@@ -5753,11 +5753,11 @@ fieldset:disabled .btn {
 }
 .active.carousel-item-end,
 .carousel-item-next:not(.carousel-item-start) {
-  transform: translateY(85%);
+  transform: translateX(100%);
 }
 .active.carousel-item-start,
 .carousel-item-prev:not(.carousel-item-end) {
-  transform: translateY(-85%);
+  transform: translateX(-100%);
 }
 .carousel-fade .carousel-item {
   opacity: 0;
@@ -5834,19 +5834,16 @@ fieldset:disabled .btn {
 }
 .carousel-indicators {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  bottom: 5%;
   z-index: 2;
   display: flex;
   justify-content: center;
-  flex-direction: column;
-
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
   padding: 0;
-  margin-right: 15%;
-  bottom: auto;
-  top: 50%;
-  margin-left: calc(98% - 18px);
+
   list-style: none;
 }
 .carousel-indicators [data-bs-target] {
@@ -5855,8 +5852,8 @@ fieldset:disabled .btn {
   width: 20px;
   height: 20px;
   padding: 0;
-  margin-right: 3px;
-  margin-left: 3px;
+  margin-right: 9px;
+  margin-left: 9px;
   text-indent: -999px;
   cursor: pointer;
   background-color: #fff;
@@ -9875,35 +9872,4 @@ fieldset:disabled .btn {
     display: none !important;
   }
 }
-@media only screen and (max-width: 1265px){
-  .active.carousel-item-end,
-.carousel-item-next:not(.carousel-item-start) {
-  transform: translateY(80%);
-}
-.active.carousel-item-start,
-.carousel-item-prev:not(.carousel-item-end) {
-  transform: translateY(-80%);
-}
-@media only screen and (max-width: 883px){
-  .active.carousel-item-end,
-.carousel-item-next:not(.carousel-item-start) {
-  transform: translateY(75%);
-}
-.active.carousel-item-start,
-.carousel-item-prev:not(.carousel-item-end) {
-  transform: translateY(-75%);
-}
-@media only screen and (max-width: 665px){
-  .active.carousel-item-end,
-.carousel-item-next:not(.carousel-item-start) {
-  transform: translateY(70%);
-}
-.active.carousel-item-start,
-.carousel-item-prev:not(.carousel-item-end) {
-  transform: translateY(-70%);
-}
-}
-}
-}
-
 /*# sourceMappingURL=bootstrap.min.css.map */
