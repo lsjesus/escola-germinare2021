@@ -29,8 +29,7 @@ const Cultura = ()=>{
                                 <li className="item-card-list">As coisas só são conquistadas com muito trabalho </li>
                                 <li className="item-card-list">Pessoa certa no lugar certo </li>
                                 <li className="item-card-list">Paixão pelo que faz </li>
-                                <li className="item-card-list">Atitude é mais importante que conhecimento </li>
-                                <li className="item-card-list">Líder é quem tem que conquistar seus liderados </li>
+
                             </ul>
                         </div>
                     </div>

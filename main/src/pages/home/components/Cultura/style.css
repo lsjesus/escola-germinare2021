@@ -27,15 +27,15 @@
 }
 .card-cultura-list{
     list-style-type: disc;
-    font-size: 12px;
-    margin: 27px 8px;
+    font-size: 16px;
+    margin: 23px 4px;
     font-weight: 700;
-    line-height: 14px;
+    line-height: 103%;
     padding-left: 0;
     
 }
 .item-card-list{
-    margin: 2px;
+    margin: 10px;
 }
 .cards-cultura{
     display: flex;
@@ -52,8 +52,8 @@
 }
 .card-cultura{
     background:  #2E3092;
-    width: 200px;
-    height: 352px;
+    width: 220px;
+    height: 372px;
     color: white;
 }
 .card-cultura-title{
@@ -70,7 +70,8 @@
     font-weight: 700;
     margin-left: -15px;
     width: 185px;
-    font-size: 12px;
+    font-size: 16px;
+    line-height: 115%;
 }
 .link-valores{
     text-decoration: underline;

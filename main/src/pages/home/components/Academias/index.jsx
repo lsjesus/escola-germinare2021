@@ -7,14 +7,13 @@ import seara from '../../assets/logo-seara.png'
 import flora from '../../assets/logo-flora.png'
 import AOS from 'aos'
 import '../../../../styles/format-aos.css'
+import { useEffect } from 'react'
 const Academias = ()=>{
     window.addEventListener('load', function() {AOS.init()})
     window.onscroll = function() {
         const footer = document.querySelector('.footer')
-        console.log(window.innerHeight + window.pageYOffset)
         if (footer!=null){
             const topfooter = footer.getBoundingClientRect().top
-            console.log(topfooter)
             if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 324){
              const nav = document.querySelector('.nav-wrapper')
              nav.style.opacity = 0
