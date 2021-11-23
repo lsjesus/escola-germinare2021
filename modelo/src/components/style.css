@@ -23,6 +23,12 @@
     font-weight: 600;
     margin-bottom: 30px;
 }
+.t1>div{
+    margin-bottom: 33px;
+    border-left-style: solid;
+    border-left-color:#AA8200;
+    padding-left: 10px;
+}
 .t1-subtitle {
     color: #AA8200;
     font-size: 16px;
@@ -33,28 +39,7 @@
     line-height: 21px;
     font-weight: 500;
     font-size: 15px;
-}
-.t1-1 {
-    width: 310px;
-    padding-bottom: 33px;
-}
-.t1-3 {
-    padding-bottom: 33px;
-}
-.t1-2 {
-    padding-bottom: 33px;
-}
-.t1-4 {
-    padding-bottom: 33px;
-}
-.t1-5 {
-    padding-bottom: 33px;
-}
-.t1-6 {
-    padding-bottom: 33px;
-}
-.t1-7 {
-    padding-bottom: 40px;
+
 }
 .media {
     position: relative;
