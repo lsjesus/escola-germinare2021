@@ -1,6 +1,6 @@
 import Carousel from "./components/CarouselHome/CarouselHome";
 import Footer from './components/Footer/Footer'
-import Nav from  './components/Nav/index'
+import Nav from  '../../components/Nav/index'
 import Cultura from "./components/Cultura";
 import Academias from "./components/Academias/index";
 import AboutOurSchool from "./components/AboutOurSchool/AboutOurSchool";
