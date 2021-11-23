@@ -35,7 +35,7 @@ const Academias = ()=>{
             <h1 className="hr-cultura" data-aos='fade-right' data-aos-duration='1700' data-aos-ease='ease-in-out'></h1>
             <h1 className='academias-title'>Academias de Ensino</h1>
 
-            <p className="academias-subtitle">Conheça nossas áreas de educação.</p>
+            {/* <p className="academias-subtitle">Conheça nossas áreas de educação.</p> */}
             
             <div className="academia-container">
                 <div className="academia-card friboi">

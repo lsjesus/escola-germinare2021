@@ -1,22 +1,21 @@
 .cultura{
-    margin-top: 60px;
-    margin-bottom: 30px;
+    margin-top: 80px;
+    margin-left: 20px;
 }
 .cultura-title{
     color: #001489;
     font-size: 32px;
     font-weight: 700;
     text-transform: uppercase;
+    margin: 20px 0 20px;
 }
 .container-cards-img{
     display: flex;
-    margin-left: 24px;
+
 }
 .title-container-cultura{
     display: flex;
     align-items: center;
-    margin-left: 24px;
-
 }
 .card-cultura-conteudo{
     font-size: 18px;
@@ -84,9 +83,7 @@
 .alunos-cultura{
     margin-bottom: 15px;
 }
-.container-cards-img{
-    margin-top: 20px;
-}
+
 @media only screen and (max-width: 1200px){
     .alunos-cultura{
         width: 50%;
@@ -120,5 +117,6 @@
 .hr-cultura{
     border-top: 4px solid #5E60E6;
     width: 146px;
-    margin-bottom: 20px;
+    margin: 0;
+    margin-left: -20px;
 }

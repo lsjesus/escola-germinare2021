@@ -3,7 +3,7 @@
   background-color: #001489;
   position: absolute;
   height: 90px;
-  width: 100%;
+  width: 100vw;
   box-shadow: 5px 5px 25px rgb(12, 1, 65);
   z-index: 98;
   color: white;
@@ -117,8 +117,9 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
 .collaborator-container{
-  padding-bottom: 15px !important;
+  margin-bottom: 15px;
 }
 
 .submenu {
@@ -188,6 +189,12 @@ p.menu-item {
 }
 
 @media only screen and (min-width: 1000px) {
+  .nav-wrapper {
+    width: 100%;
+  }
+  .collaborator-container{
+    margin-bottom: 0px;
+  }
 
   .nav-wrapper {
     background-color: #001489;
@@ -195,7 +202,7 @@ p.menu-item {
     justify-content: space-between;
   }
   .nav{
-    width: 60%;
+    width: 30%;
   }
  .burguer-button {
     display: none;
@@ -220,10 +227,12 @@ p.menu-item {
     margin-left: 0;
     max-height: 0px;
     position: absolute;
+    line-height: 1;
     max-width: 125px;
     height: fit-content;
     border-radius: 0px 0 5px 5px;
     background-color: var(--main-blue3);
+    row-gap: 10px;
   }
 
   .title-submenu {
@@ -247,11 +256,21 @@ p.menu-item {
     max-height: 1000px;
   }
 
-  
-
   .menu-item {
     height: fit-content;
     width: fit-content;
+  }
+
+  .submenu > li {
+    margin-left: 5px;
+  }
+
+  .submenu > li:first-child {
+    margin-top: 2.5px;
+  }
+
+  .submenu > li:last-child {
+    margin-bottom: 6px;
   }
 
 }
