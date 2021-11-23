@@ -3,6 +3,7 @@
     flex-direction: column;
     width: calc(100% - 20px);
     padding: 20px;
+    padding-top: 0;
 }
 .infos {
     display: flex;

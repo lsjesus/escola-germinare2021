@@ -8,8 +8,13 @@ import flora from '../../assets/logo-flora.png'
 import AOS from 'aos'
 import '../../../../styles/format-aos.css'
 import { useEffect } from 'react'
+import Aos from 'aos'
 const Academias = ()=>{
-    window.addEventListener('load', function() {AOS.init()})
+    useEffect(()=>{
+        setTimeout(()=>{
+            Aos.init()
+        }, 1000)
+    }, [])
     window.onscroll = function() {
         const footer = document.querySelector('.footer')
         if (footer!=null){
