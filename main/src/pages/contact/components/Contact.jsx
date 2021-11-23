@@ -60,7 +60,7 @@ const Contato = ()=>{
       document.getElementById('error-subject').style.display = "none";
     }
     if (errorsubject) {
-      design.border = "solid 5px red";
+      design.border = "solid 2px red";
       design.background = "#ffdddd";
   }
   else {
@@ -125,22 +125,22 @@ const Contato = ()=>{
             <input value={valoresNome} onChange= {(e) => {
               validateName(e.target.value)
               setNameValue(e.target.value)
-            }} type="text" className="form-control" id='name' placeholder="Digite seu nome (obrigatório)" required/>
+            }} type="text" className="form-controller" id='name' placeholder="Digite seu nome (obrigatório)" required/>
             <span id="error-name">O nome não pode conter caracteres especiais (números).</span>
             <span id="error-surname">Sobrenome é necessário.</span>
           </div>
 					<div class="form-container">
-            <input type="email" className="form-control" placeholder="Digite seu e-mail (obrigatório)" required/>
+            <input type="email" className="form-controller" placeholder="Digite seu e-mail (obrigatório)" required/>
           </div>
 					<div class="form-container">
             <input onChange= {(e) => {
               validateSubject(e.target.value)
               setSubjectValue(e.target.value)
-            }} value={valoresMotivo} id="subject" type="text" name="motivo" className="form-control" placeholder="Digite o motivo do contato (obrigatório)" required/>
+            }} value={valoresMotivo} id="subject" type="text" name="motivo" className="form-controller" placeholder="Digite o motivo do contato (obrigatório)" required/>
           <span id="error-subject">É necessário pelo menos uma letra.</span>
           </div>
 					<div class="form-container">
-          <textarea className="form-control message" cols="40" rows="10" placeholder="Digite sua mensagem (obrigatório)" required></textarea>
+          <textarea className="form-controller message" cols="40" rows="10" placeholder="Digite sua mensagem (obrigatório)" required></textarea>
           </div>					
           <div className="buttons">
             <button onClick={cleanForm} value="Reset" className="buttonLimpar">Limpar</button>
