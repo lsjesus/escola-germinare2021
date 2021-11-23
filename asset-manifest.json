@@ -10,11 +10,11 @@
     "main.css": "/escola-germinare2021/static/css/main.a577d76e.chunk.css",
     "main.js": "/escola-germinare2021/static/js/main.74c5bd6f.chunk.js",
     "main.js.map": "/escola-germinare2021/static/js/main.74c5bd6f.chunk.js.map",
-    "runtime-main.js": "/escola-germinare2021/static/js/runtime-main.91b7a461.js",
-    "runtime-main.js.map": "/escola-germinare2021/static/js/runtime-main.91b7a461.js.map",
+    "runtime-main.js": "/escola-germinare2021/static/js/runtime-main.fda8fb78.js",
+    "runtime-main.js.map": "/escola-germinare2021/static/js/runtime-main.fda8fb78.js.map",
     "static/js/5.0813ec11.chunk.js": "/escola-germinare2021/static/js/5.0813ec11.chunk.js",
     "static/js/5.0813ec11.chunk.js.map": "/escola-germinare2021/static/js/5.0813ec11.chunk.js.map",
-    "static/css/6.cb505112.chunk.css": "/escola-germinare2021/static/css/6.cb505112.chunk.css",
+    "static/css/6.27194cac.chunk.css": "/escola-germinare2021/static/css/6.27194cac.chunk.css",
     "static/js/6.11fdcc69.chunk.js": "/escola-germinare2021/static/js/6.11fdcc69.chunk.js",
     "static/js/6.11fdcc69.chunk.js.map": "/escola-germinare2021/static/js/6.11fdcc69.chunk.js.map",
     "static/js/7.0cd64571.chunk.js": "/escola-germinare2021/static/js/7.0cd64571.chunk.js",
@@ -57,7 +57,7 @@
     "static/css/15.c8c2716f.chunk.css.map": "/escola-germinare2021/static/css/15.c8c2716f.chunk.css.map",
     "static/css/16.a7a4979a.chunk.css.map": "/escola-germinare2021/static/css/16.a7a4979a.chunk.css.map",
     "static/css/2.10a150aa.chunk.css.map": "/escola-germinare2021/static/css/2.10a150aa.chunk.css.map",
-    "static/css/6.cb505112.chunk.css.map": "/escola-germinare2021/static/css/6.cb505112.chunk.css.map",
+    "static/css/6.27194cac.chunk.css.map": "/escola-germinare2021/static/css/6.27194cac.chunk.css.map",
     "static/css/8.b0b2820a.chunk.css.map": "/escola-germinare2021/static/css/8.b0b2820a.chunk.css.map",
     "static/css/9.69e9943c.chunk.css.map": "/escola-germinare2021/static/css/9.69e9943c.chunk.css.map",
     "static/css/main.a577d76e.chunk.css.map": "/escola-germinare2021/static/css/main.a577d76e.chunk.css.map",
@@ -89,7 +89,7 @@
     "static/media/universidade.1fa18cb1.png": "/escola-germinare2021/static/media/universidade.1fa18cb1.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.91b7a461.js",
+    "static/js/runtime-main.fda8fb78.js",
     "static/js/5.0813ec11.chunk.js",
     "static/css/main.a577d76e.chunk.css",
     "static/js/main.74c5bd6f.chunk.js"
