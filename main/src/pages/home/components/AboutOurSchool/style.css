@@ -125,7 +125,7 @@
     }
 
     .top-content-text > img {
-        display: block;
+        display: none;
         margin-top: 0;
     }
 

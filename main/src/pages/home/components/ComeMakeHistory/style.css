@@ -129,6 +129,7 @@
     .second-content-container > div {
         width: 30%;
         gap: 30px;
+        height: 269px;
     }
     .first-content-container{
         margin-left: 60px;

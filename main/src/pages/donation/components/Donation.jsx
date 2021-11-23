@@ -28,8 +28,7 @@ const Donation = () => {
                     </div>
                 </div>
             </div>
-            <p className='text'> Caso prefira, você pode fazer uma doação diretamente na conta corrente da escola. Para isso, entre em contato através do e-mail <a href="mailto: instituto@germinare.org.br" className='link-donation'>instituto@germinare.org.br</a>.</p>
-            <p className='pessoa-juridica'>No caso de doações de Pessoa Jurídica, pedimos a gentileza de nos contatar através do e-mail mencionado acima.</p>
+            <p className='text'> Caso seja Pessoa Jurídica ou queira fazer uma doação diretamente em nossa conta corrente, pedimos que por gentileza entre em contato conosco via <a href="mailto: instituto@germinare.org.br" className='link-donation'>instituto@germinare.org.br</a>.</p>
         </section> 
         </>   
     )
