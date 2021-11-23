@@ -2,6 +2,7 @@ import './style.css'
 import image from '../assets/imagem.jpeg'
 import {Header} from './Header'
 import { useState } from 'react'
+import { MdKeyboardArrowRight } from 'react-icons/md'
 
 const Model = ()=>{
 /*
