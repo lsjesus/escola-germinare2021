@@ -9,7 +9,10 @@ import AOS from 'aos'
 import '../../../../styles/format-aos.css'
 import { useEffect } from 'react'
 const Academias = ()=>{
-    window.addEventListener('load', function() {AOS.init()})
+    window.addEventListener('load', function() {
+        AOS.init()
+        AOS.refreshHard()
+    })
     window.onscroll = function() {
         const footer = document.querySelector('.footer')
         if (footer!=null){
