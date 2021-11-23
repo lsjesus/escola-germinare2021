@@ -1,5 +1,4 @@
 .come-make-history {
-    width: calc(100%-40px);
     padding: 0 20px;
     margin-top: 60px;
 }
@@ -130,5 +129,9 @@
     .second-content-container > div {
         width: 30%;
         gap: 30px;
+    }
+    .first-content-container{
+        margin-left: 60px;
+        margin-bottom: 40px;
     }
 }
