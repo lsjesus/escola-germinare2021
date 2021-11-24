@@ -63,14 +63,13 @@
 }
 
 .second-content-container {
-    width: 100vw;
     margin: 0 -20px;
     margin-top: 10px;
     height: fit-content;
     padding: 20px;
     background-color: #6668DA;
     color: white;
-    justify-content: space-between;
+    justify-content: space-around;
     display: flex;
     flex-direction: column;
     gap: 35px;
@@ -110,6 +109,7 @@
 @media (min-width: 700px) {
     .second-content-container{
         flex-direction: row;
+        padding: 50px 30px;
     }
 
     .first-content-container > div > img {
@@ -123,13 +123,12 @@
     }
 
     .second-content-container {
-        gap: 25%;
+        gap: 15%;
     }
 
     .second-content-container > div {
-        width: 30%;
-        gap: 30px;
-        height: 269px;
+        width: 40%;
+        row-gap: 20px;
     }
     .first-content-container{
         margin-left: 60px;
