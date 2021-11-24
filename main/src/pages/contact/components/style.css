@@ -99,7 +99,8 @@
     border-width: 2px;
 }
 .form-controller:focus {
-    border: 3px solid #5E61E6;
+    outline: 2px solid #5E61E6;
+    box-shadow: 3px 3px 3px #757575;
 }
 .buttons {
     width: auto;

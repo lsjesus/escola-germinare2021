@@ -39,11 +39,13 @@ const Contato = ()=>{
     if (errorsurname || errorname) {
       design.border = "solid 2px red";
       design.background = "#ffdddd";
+      design.outline = "2px solid red"
       
     }
     else {
       design.border = "2px solid #5E61E6"
       design.background = "white"
+      design.outline = "2px solid #5E61E6"
     }
   }
 
@@ -62,10 +64,12 @@ const Contato = ()=>{
     if (errorsubject) {
       design.border = "solid 2px red";
       design.background = "#ffdddd";
+      design.outline = "2px solid red"
   }
   else {
     design.border = "2px solid #5E61E6"
     design.background = "white"
+    design.outline = "2px solid #5E61E6"
   }
 }
   const [valoresNome, setNameValue] = useState('')
