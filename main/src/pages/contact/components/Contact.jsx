@@ -13,7 +13,12 @@ const Contato = ()=>{
   function recebeData(e){
     e.preventDefault()
 
-    if (validateNameError || validateEmailError || validateSubjectError) {
+    if (
+      document.getElementById('error-name').style.display === "block" ||
+      document.getElementById('error-surname').style.display === "block" ||
+      document.getElementById('error-email').style.display === "block" ||
+      document.getElementById('error-subject').style.display === "block" 
+      ){
       return
     }
     const formularioInfo = {
@@ -22,6 +27,7 @@ const Contato = ()=>{
       motivo: e.target[2].value,
       mensagem: e.target[3].value,
     }
+    console.log('certo')
     // cleanForm()
   }
 
@@ -34,19 +40,15 @@ const Contato = ()=>{
 
   function validateEmail(email){
     let erroremail = false
-    var validateEmailError = false
+
     const design = document.getElementById('email').style;
 
     //Valida se tem @
-    if (!email.split('').includes('@')){
-      erroremail = true
-
-      //Valida se tem texto após o @
-      if (email.split('@')[-1] === ""){erroremail = true}
-    }
+    if (!email.split('').includes('@')){erroremail = true}
+    //Valida se tem texto após o @
+    else {if (email.split('@')[email.split('@').length-1] === ""){erroremail = true}}
 
     if (erroremail){
-      validateEmailError = true
       document.getElementById('error-email').style.display = "block";
       design.border = "solid 2px red";
       design.background = "#ffdddd";
@@ -58,13 +60,11 @@ const Contato = ()=>{
       design.background = "white"
       design.outline = "2px solid #5E61E6"
     }
-
-
   }
 
   function validateName(name) {
     const letters = /^[A-Za-záàâãéèêíïóôõöúçñüÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑÜ ]+$/;
-    var validateNameError = false
+
     let errorsurname = false;
     let errorname = false;
     const design = document.getElementById('name').style
@@ -84,7 +84,6 @@ const Contato = ()=>{
       errorsurname = true;
     }
     if (errorsurname || errorname) {
-      validateNameError = true
       design.border = "solid 2px red";
       design.background = "#ffdddd";
       design.outline = "2px solid red"
@@ -99,7 +98,7 @@ const Contato = ()=>{
 
 function validateSubject(validation) {
   const letters = /^[0-9\s]*$/g;
-  validateSubjectError = false
+
   let errorsubject = false;
   const design = document.getElementById('subject').style;
   
@@ -111,7 +110,6 @@ function validateSubject(validation) {
     document.getElementById('error-subject').style.display = "none";
   }
   if (errorsubject) {
-    validateSubjectError = true
     design.border = "solid 2px red";
     design.background = "#ffdddd";
     design.outline = "2px solid red"
