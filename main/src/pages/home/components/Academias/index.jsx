@@ -57,7 +57,7 @@ const Academias = ()=>{
                 <div className="academia-card swift">
                     <div className="format-academia">
                         <img src={swift} alt="" className="logo-academia" />
-                        <p className="txt-card-academia">Aprenda serviços varejistas e gestão de negócios através do conhecimento de produto, pessoas, expansão, sustentabilidade e transformação digital.</p>
+                        <p className="txt-card-academia">Aprenda sobre serviços varejistas e gestão de negócios através do conhecimento de pessoas e processos.</p>
                     </div>
                 </div>
                 <div className="academia-card original">
