@@ -1,5 +1,4 @@
 .come-make-history {
-    width: calc(100%-40px);
     padding: 0 20px;
     margin-top: 60px;
 }
@@ -64,14 +63,13 @@
 }
 
 .second-content-container {
-    width: 100vw;
     margin: 0 -20px;
     margin-top: 10px;
     height: fit-content;
     padding: 20px;
     background-color: #6668DA;
     color: white;
-    justify-content: space-between;
+    justify-content: space-around;
     display: flex;
     flex-direction: column;
     gap: 35px;
@@ -108,27 +106,10 @@
 .second-content-container > div > h1 {
     font-size: clamp(20px, calc(20px + 8 * ((100vw - 320px) / 760)), 28px);
 }
-.first-content-container > div > a{
-    animation: pulse3 2s 5s  ease-out infinite;
-}
-@keyframes pulse3 {
-    0% {
-      opacity: 1;
-      transform: none;
-    }
-    50% {
-      opacity: .8;
-      transform: scale(.92);
-    }
-    100% {
-      opacity: 1;
-      transform: none;
-    }
-  }
-
 @media (min-width: 700px) {
     .second-content-container{
         flex-direction: row;
+        padding: 50px 30px;
     }
 
     .first-content-container > div > img {
@@ -142,11 +123,15 @@
     }
 
     .second-content-container {
-        gap: 25%;
+        gap: 15%;
     }
 
     .second-content-container > div {
-        width: 30%;
-        gap: 30px;
+        width: 40%;
+        row-gap: 20px;
+    }
+    .first-content-container{
+        margin-left: 60px;
+        margin-bottom: 40px;
     }
 }

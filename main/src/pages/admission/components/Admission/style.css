@@ -1,6 +1,5 @@
 .main{
-    padding: 20px;
-    padding-bottom: 0;
+    padding-bottom: 120px;
 }
 .title{
     color: #001489;
@@ -10,7 +9,8 @@
 }
 
 .container-adm{
-    padding: 0 20px 50px 20px;
+    padding: 0 20px;
+    padding-bottom: 100px;
     /* width: calc(100% - 40px); */
     display: flex;
     justify-content: center;
@@ -19,7 +19,6 @@
 }
 
 .info{
-    height: 490px;
     width: fit-content;
     line-height: 125%;
     font-size: 16px;
@@ -74,8 +73,13 @@
 }
 
 @media only screen and (max-width: 700px) {
+    .container-adm{
+        flex-direction: column-reverse;
+    }
     .alunos{
-        display: none;
+        width: 80%;
+        height:70%;
+        margin-bottom: 20px;
     }
 }
 

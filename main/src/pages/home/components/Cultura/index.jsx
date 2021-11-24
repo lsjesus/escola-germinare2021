@@ -5,10 +5,12 @@ import { Link } from 'react-router-dom'
 const Cultura = ()=>{
     return(
         <section className="cultura">
+            <h1 className="hr-cultura" data-aos='fade-right' data-aos-duration='1700' data-aos-ease='ease-in-out'></h1>
             <div className="title-container-cultura">
                 <h1 className='cultura-title'>Cultura</h1>
-                <img src={valorespq} alt="valores" className="valorespq" />
+                
             </div>
+           
             <div className="container-cards-img">
                 <img src={alunos} alt="alunos germinare" className="alunos-cultura" />
                 <div className="cards-cultura">
@@ -27,8 +29,7 @@ const Cultura = ()=>{
                                 <li className="item-card-list">As coisas só são conquistadas com muito trabalho </li>
                                 <li className="item-card-list">Pessoa certa no lugar certo </li>
                                 <li className="item-card-list">Paixão pelo que faz </li>
-                                <li className="item-card-list">Atitude é mais importante que conhecimento </li>
-                                <li className="item-card-list">Líder é quem tem que conquistar seus liderados </li>
+
                             </ul>
                         </div>
                     </div>

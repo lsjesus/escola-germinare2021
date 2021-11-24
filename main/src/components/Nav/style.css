@@ -1,6 +1,6 @@
 .nav-wrapper {
   background-color: #001489;
-  position: absolute;
+  position: fixed;
   height: 90px;
   width: 100vw;
   box-shadow: 5px 5px 25px rgb(12, 1, 65);
@@ -9,8 +9,17 @@
   top: 0;
 }
 
+.about-us-container .chevron-right, .collaborator-container  .chevron-right {
+  transform: rotate(90deg)
+}
+
+.menu-item {
+  margin-bottom: 0;
+}
+
 .nav {
-  width: 100vw;
+  margin: 0 20px;
+  width: calc(100%-40px);
   height: 90px;
   display: flex;
   justify-content: space-between;
@@ -64,7 +73,6 @@
 }
 
 .menu >li {
-  
   padding: 5px;
   padding-left: 40px;
   border-radius: 2px 5px;
@@ -168,11 +176,11 @@ p.menu-item {
 }
 
 .chevron-right {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
-.turned {
-  transform: rotate(90deg)
+.chevron-right.turned {
+  transform: rotate(-90deg)
 }
 
 .aberto {
@@ -214,6 +222,7 @@ p.menu-item {
   .submenu {
     row-gap: 10px;
     margin-left: 0;
+    margin-top: 5px;
     max-height: 0px;
     position: absolute;
     max-width: 125px;
@@ -223,21 +232,35 @@ p.menu-item {
     display: flex;
     justify-content: space-between;
   }
+  
+
+  .submenu > li {
+    margin-left: 5px;
+  }
+
+  .submenu > li:first-child {
+    margin-top: 2.5px;
+  }
+
+  .submenu > li:last-child {
+    margin-bottom: 6px;
+  }
 
   .title-submenu {
     cursor: context-menu;
   }
 
   .about-us-container:hover .chevron-right {
-    transform: rotate(90deg)
+    transform: rotate(-90deg)
   }
 
   .collaborator-container:hover .chevron-right {
-    transform: rotate(90deg)
+    transform: rotate(-90deg)
   }
 
   .about-us-container:hover > .submenu {
     max-height: 1000px;
+    
   }
   
   .collaborator-container:hover > .submenu {

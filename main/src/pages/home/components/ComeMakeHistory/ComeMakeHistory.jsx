@@ -5,7 +5,9 @@ import { Link } from 'react-router-dom'
 
 const ComeMakeHistory = ()=>{
     return(
+        
         <section className="come-make-history">
+           
             <div className="first-content-container" data-aos='zoom-in-up' data-aos-duration='700' data-aos-easing="ease-in-out">
                 <img src={studentLooking} alt="" />
                 <div>

@@ -7,10 +7,16 @@ import seara from '../../assets/logo-seara.png'
 import flora from '../../assets/logo-flora.png'
 import AOS from 'aos'
 import '../../../../styles/format-aos.css'
+import { useEffect } from 'react'
+import Aos from 'aos'
 const Academias = ()=>{
-    window.addEventListener('load', function() {AOS.init()})
+    useEffect(()=>{
+        setTimeout(()=>{
+            Aos.init()
+        }, 1000)
+    }, [])
     window.onscroll = function() {
-        const footer = document.querySelector('.footer-home')
+        const footer = document.querySelector('.footer')
         if (footer!=null){
             const topfooter = footer.getBoundingClientRect().top
             if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 324){
@@ -30,8 +36,11 @@ const Academias = ()=>{
     return(
         <section data-aos="fade-up" className="academias aos-init aos-animate" data-aos-duration="400"
         data-aos-easing="ease-in-out">
+            <h1 className="hr-cultura" data-aos='fade-right' data-aos-duration='1700' data-aos-ease='ease-in-out'></h1>
             <h1 className='academias-title'>Academias de Ensino</h1>
-            <p className="academias-subtitle">Conheça nossas áreas de educação.</p>
+
+            {/* <p className="academias-subtitle">Conheça nossas áreas de educação.</p> */}
+            
             <div className="academia-container">
                 <div className="academia-card friboi">
                     <div className="format-academia">
@@ -48,7 +57,7 @@ const Academias = ()=>{
                 <div className="academia-card swift">
                     <div className="format-academia">
                         <img src={swift} alt="" className="logo-academia" />
-                        <p className="txt-card-academia">Aprenda serviços varejistas e gestão de negócios através do conhecimento de produto, pessoas, expansão, sustentabilidade e transformação digital.</p>
+                        <p className="txt-card-academia">Aprenda sobre serviços varejistas e gestão de negócios através do conhecimento de pessoas e processos.</p>
                     </div>
                 </div>
                 <div className="academia-card original">

@@ -11,7 +11,7 @@ export const Header = styled.div`
         border-bottom: 5px solid #5E61E6;
         border-top: 5px solid #5E61E6;
         font-weight: bold;
-        display: flex;
+        display: none;
         align-items: center;
         a {
         text-decoration: none;

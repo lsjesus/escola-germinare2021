@@ -1,7 +1,7 @@
 import './style-donation.css'
 import qrcode from '../assets/qrcode.png'
 import logo_branco2 from '../assets/logo_branco2.png'
-import { Header } from './Header'
+import {Header} from '../../../components/Title-2/Header'
 import { Link } from 'react-router-dom'
 const Donation = () => {
     return(
@@ -18,7 +18,7 @@ const Donation = () => {
             <p className='text'>Para apoiar, você pode fazer uma doação para a Escola Germinare através do PicPay. <span>Para isso basta escanear o Qr Code abaixo e pagar tanto com seu saldo em carteira ou com seu cartao de credito!</span></p>
             <div className='container-pai'>
                 <img className='imagem-donation'src={qrcode} alt="Qrcode para realizar a doação"/>
-                <a href="#">Doar</a>
+                <a href="https://picpay.me/doegerminare">Doar</a>
                 <div className='container'>
                     <div className='container-logo-branco'>
                         <img src={logo_branco2} alt="" />
@@ -28,8 +28,7 @@ const Donation = () => {
                     </div>
                 </div>
             </div>
-            <p className='text'> Caso prefira, você pode fazer uma doação diretamente na conta corrente da escola. Para isso, entre em contato através do e-mail <a href="" className='link-donation'>instituto@germinare.org.br</a>.</p>
-            <p className='pessoa-juridica'>No caso de doações de Pessoa Jurídica, pedimos a gentileza de nos contatar através do e-mail mencionado acima.</p>
+            <p className='text'> Caso seja Pessoa Jurídica ou queira fazer uma doação diretamente em nossa conta corrente, pedimos que por gentileza entre em contato conosco via <a href="mailto: instituto@germinare.org.br" className='link-donation'>instituto@germinare.org.br</a>.</p>
         </section> 
         </>   
     )

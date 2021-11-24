@@ -3,9 +3,12 @@
 }
 
 .about-our-school {
-    width: 100vw;
-    padding: 0 20px;
-    margin-top: 40px;
+    width: calc(100vw-40px);
+    margin: 50px 20px 0 20px;
+}
+
+.about-our-school p {
+    font-size: 20px;
 }
 
 .top-content {
@@ -29,37 +32,43 @@
     display: none;
 }
 
-.top-content-text > h1 {
+.about-our-school-title {
     text-transform:uppercase;
     font-weight: 700;
-    font-size: clamp(24px, calc(24px + 8*var(--screen-size)), 32px);
+    font-size: 32px;
     color: #001489;
-}
-
-.top-content-text > p, .about-our-school > p{
-    margin-top: 10px;
-    font-size: clamp(16px, calc(16px + 6*var(--screen-size)), 22px);
-}
-
-.data-content-wrapper-about-us {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.data-content-wrapper-about-us {
     margin: 20px 0;
 }
 
+.about-our-school > p{
+    margin-top: 10px;
+}
+
+.data-content-wrapper-about-us {
+    line-height: 1.2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 40px;
+    align-items: center;
+    margin-top: 40px;
+
+}
+
+.top-content-text > p, .text-at-the-bottom {
+    line-height: 135%;
+    
+}
+
+
 .data-content-wrapper-about-us > div {
-    width: 40%;
+    width: 55%;
     height: fit-content;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: baseline;
     flex-direction: column;
-    margin-top: 10px;
     vertical-align: top;
 }
 
@@ -71,25 +80,40 @@
     width: 30%;
 }
 
-.data-content-wrapper-about-us > div > h1 {
+.data-content-wrapper-about-us > div > h2 {
     color: #001489;
     font-weight: 700;
-    font-size: clamp(18px, calc(18px + 10*var(--screen-size)), 28px);
+    font-size: 26px;
     margin: 5px 0;
     white-space: nowrap;
 
 }
 
-.data-content-wrapper-about-us > div > p {
-    font-size: clamp(14px, calc(14px + 4*var(--screen-size)), 18px);
+.hr-about-our-school{
+    border-top: 4px solid #5E60E6;
+    width: 146px;
+    margin-left: -20px;
+}
+
+.data-content-wrapper-about-us p {
+    margin-bottom: 0;
 }
 
 @media only screen and (min-width: 700px) {
+    .data-content-wrapper-about-us {
+        justify-content: space-between;
+    }
+    .data-content-wrapper-about-us > div {
+        width: 45%;
+
+    }
+
     .top-content-text > .data-content-wrapper-about-us {
         display: none;
     }
     .about-our-school > .data-content-wrapper-about-us {
         display: flex;
+        margin-top: 40px;
     }
 
     .top-content {
@@ -102,7 +126,7 @@
     }
 
     .top-content-text > img {
-        display: block;
+        display: none;
         margin-top: 0;
     }
 

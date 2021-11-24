@@ -36,7 +36,7 @@ const Nav = ()=>{
     return(
         <div className="nav-wrapper nav-adm">
             <div className='nav'>
-                <Link to='/' className="logo-wrapper"><img src={logo} alt="Logo Escola Germinare" className="logo"/></Link>
+                <Link to='/' className="logo-wrapper" onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}><img src={logo} alt="Logo Escola Germinare" className="logo"/></Link>
                 <button className="burguer-button" onClick={ToggleClass}>
                     <div className={`hamburguer-menu ${menuActualClass()} ret-top`}></div>
                     <div className={`hamburguer-menu ${menuActualClass()} ret-middle`}></div>

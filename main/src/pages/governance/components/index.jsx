@@ -1,6 +1,6 @@
 import './style.css'
 import kitchen from '../assets/a-le.png'
-import {Header} from './Header'
+import {Header} from '../../../components/Title-2/Header'
 import { Link } from 'react-router-dom'
 const Gov = ()=>{
     return (

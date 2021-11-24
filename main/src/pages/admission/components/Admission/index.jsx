@@ -1,13 +1,13 @@
 import alunos from '../../assets/alunos.png'
 import './style.css'
-import { Header } from '../../../../components/Title/Header'
+import {Header} from '../../../../components/Title-2/Header'
 import { Link } from 'react-router-dom'
 const Main = ()=>{
     return(
         <>
-        <Header>
+        <Header style={{marginTop: "130px"}}>
             <p>
-                <Link to='/' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>Home</Link>/ Processo de Admissão 2021/2022
+                <Link to='/'>Home</Link>/ Processo de Admissão 2021/2022
             </p>
             <h1>Processo de Admissão 2021/2022</h1>
         </Header> 

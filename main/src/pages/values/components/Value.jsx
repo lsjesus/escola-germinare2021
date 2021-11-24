@@ -1,6 +1,6 @@
 import './style.css'
 import valueImg from '../assets/joao-neto.png'
-import { Header } from './Header'
+import {Header} from '../../../components/Title-2/Header'
 import { Link } from 'react-router-dom'
 const Value = ()=>{
     return(

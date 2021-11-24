@@ -161,10 +161,6 @@ h5 {
 h6 {
   font-size: 1rem;
 }
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
 abbr[data-bs-original-title],
 abbr[title] {
   -webkit-text-decoration: underline dotted;
@@ -177,10 +173,6 @@ address {
   margin-bottom: 1rem;
   font-style: normal;
   line-height: inherit;
-}
-ol,
-ul {
-  padding-left: 2rem;
 }
 dl,
 ol,
@@ -204,10 +196,6 @@ dd {
 blockquote {
   margin: 0 0 1rem;
 }
-b,
-strong {
-  font-weight: bolder;
-}
 .small,
 small {
   font-size: 0.875em;
@@ -229,13 +217,6 @@ sub {
 }
 sup {
   top: -0.5em;
-}
-a {
-  color: #0d6efd;
-  text-decoration: underline;
-}
-a:hover {
-  color: #0a58ca;
 }
 a:not([href]):not([class]),
 a:not([href]):not([class]):hover {
@@ -5834,19 +5815,16 @@ fieldset:disabled .btn {
 }
 .carousel-indicators {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  bottom: 5%;
   z-index: 2;
   display: flex;
   justify-content: center;
-  flex-direction: column;
-
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
   padding: 0;
-  margin-right: 15%;
-  bottom: auto;
-  top: 50%;
-  margin-left: calc(98% - 18px);
+
   list-style: none;
 }
 .carousel-indicators [data-bs-target] {
@@ -5855,8 +5833,8 @@ fieldset:disabled .btn {
   width: 20px;
   height: 20px;
   padding: 0;
-  margin-right: 3px;
-  margin-left: 3px;
+  margin-right: 9px;
+  margin-left: 9px;
   text-indent: -999px;
   cursor: pointer;
   background-color: #fff;
