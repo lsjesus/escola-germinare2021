@@ -914,7 +914,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos] {
 [data-aos="flip-down"].aos-animate {
   transform: perspective(2500px) rotateX(0);
 }
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1025px){
     [data-aos="fade-left"] {
         transform: translate3d(20px, 0, 0);
       }

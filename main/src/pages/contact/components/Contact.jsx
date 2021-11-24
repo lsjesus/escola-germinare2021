@@ -27,8 +27,8 @@ const Contato = ()=>{
       motivo: e.target[2].value,
       mensagem: e.target[3].value,
     }
-    console.log('certo')
-    // cleanForm()
+    document.location.reload(true)
+    cleanForm()
   }
 
   function cleanForm(event) {
