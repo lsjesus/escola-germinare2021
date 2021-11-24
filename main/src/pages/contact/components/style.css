@@ -93,7 +93,11 @@
     line-height: 20px;
     margin-bottom: 5px;
 }
+.form-controller::placeholder {
+    font-size: 17.6px;
+}
 .message {
+    resize: vertical;
     height: 190px;
     padding: 20px;
     border-width: 2px;
@@ -227,6 +231,7 @@ span{
     color: red;
 }
 
-#error-name, #error-surname, #error-subject {
+#error-name, #error-surname, #error-subject, #error-email {
     line-height: 125%;
 }
+
