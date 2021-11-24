@@ -17,7 +17,8 @@ const Contato = ()=>{
       document.getElementById('error-name').style.display === "block" ||
       document.getElementById('error-surname').style.display === "block" ||
       document.getElementById('error-email').style.display === "block" ||
-      document.getElementById('error-subject').style.display === "block" 
+      document.getElementById('error-subject').style.display === "block" ||
+      document.getElementById('error-message').style.display === "block"
       ){
       return
     }
@@ -120,9 +121,35 @@ function validateSubject(validation) {
     design.outline = "2px solid #5E61E6"
   }
 }
+
+function validateMessage(validation) {
+  const letters = /^[0-9\s]*$/g;
+
+  let errorsubject = false;
+  const design = document.getElementById('message').style;
+  
+  if (letters.test(validation)) {
+    document.getElementById('error-message').style.display = "block";
+    errorsubject = true;
+  }
+  else {
+    document.getElementById('error-message').style.display = "none";
+  }
+  if (errorsubject) {
+    design.border = "solid 2px red";
+    design.background = "#ffdddd";
+    design.outline = "2px solid red"
+  }
+  else {
+    design.border = "2px solid #5E61E6"
+    design.background = "white"
+    design.outline = "2px solid #5E61E6"
+  }
+}
   const [valoresNome, setNameValue] = useState('')
   const [valoresMotivo, setSubjectValue] = useState('')
   const [valoresEmail, setEmailValue] = useState('')
+  const [valoresMensagem, setMessageValue] = useState('')
 
   return(
   <>
@@ -208,7 +235,16 @@ function validateSubject(validation) {
               <span id="error-subject">É necessário pelo menos uma letra.</span>
             </div>
               <div class="form-container">
-              <textarea className="form-controller message" cols="40" rows="10" placeholder="Digite sua mensagem" required></textarea>
+              <textarea 
+              value={valoresMensagem} 
+              onChange= {(e) => {validateMessage(e.target.value);setMessageValue(e.target.value)}} 
+              className="form-controller message"
+              id="message"
+              cols="40" 
+              rows="10" 
+              placeholder="Digite sua mensagem" 
+              required></textarea>
+              <span id="error-message">É necessário pelo menos uma letra.</span>
             </div>					
             <div className="buttons">
               <button onClick={cleanForm} value="Reset" className="buttonLimpar">Limpar</button>
