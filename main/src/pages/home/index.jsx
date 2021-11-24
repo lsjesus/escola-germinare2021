@@ -5,10 +5,12 @@ import Cultura from "./components/Cultura";
 import Academias from "./components/Academias/index";
 import AboutOurSchool from "./components/AboutOurSchool/AboutOurSchool";
 import ComeMakeHistory from "./components/ComeMakeHistory/ComeMakeHistory";
+import Cookies from "./components/Cookies";
 const Home = ()=>{
   return(
     <div className='Home'>
       <Nav/>
+      <Cookies/>
       <Carousel/>
       <AboutOurSchool/>
       <Cultura/>
