@@ -43,7 +43,7 @@
 }
 .dica{
     background-color: #F1F1FF;
-    width: 380px;
+    width: 100%;
     padding: 30px 60px;
 }
 
@@ -66,12 +66,20 @@
 }
 
 @media only screen and (max-width: 1000px) {
+    .imagem-donation {
+        margin-left: 0;
+    }
+
     .container {
         width: 40%;
     }
     .dica {
         width: 100%;
-        padding: 30px 30px 30px 60px;
+        padding: 30px 15px 30px 30px;
+    }
+    .container-logo-branco {
+        top: -40px;
+        left: -60px;
     }
 }
 
