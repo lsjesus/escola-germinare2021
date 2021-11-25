@@ -131,7 +131,7 @@
 .close-icon:hover{
   fill: #efefef;
 }
-.navigation{
+/* .navigation{
     margin-left: auto;
     width: 68%;
 }
@@ -139,7 +139,7 @@
     margin: auto;
     display: flex;
     justify-content: space-around;
-}
+} */
 .item-menu{
     display: flex;
     align-items: center;

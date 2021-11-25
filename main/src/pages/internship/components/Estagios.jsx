@@ -4,7 +4,14 @@ import AOS from 'aos'
 import '../../../styles/format-aos.css'
 import { GiClick } from 'react-icons/gi'
 import { Link } from 'react-router-dom'
+import Aos from 'aos'
+import { useEffect } from 'react'
 const Estagios = ()=>{
+    useEffect(()=>{
+        setTimeout(()=>{
+            Aos.init()
+        }, 1000)
+    }, [])
     window.addEventListener('load', function() {AOS.init()})
     return(
         <>
