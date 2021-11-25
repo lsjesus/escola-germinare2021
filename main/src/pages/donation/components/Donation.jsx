@@ -19,7 +19,7 @@ const Donation = () => {
             <div className='container-pai'>
                 <img className='imagem-donation'src={qrcode} alt="Qrcode para realizar a doação"/>
                 <a href="https://picpay.me/doegerminare">Doar</a>
-                <div className='container'>
+                <div className='container-donation-ation'>
                     <div className='container-logo-branco'>
                         <img src={logo_branco2} alt="" />
                     </div>
