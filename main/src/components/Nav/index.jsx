@@ -45,7 +45,7 @@ const Nav = ()=>{
             </div>
             <ul className={`menu ${classActual()}`}>
                 <li>
-                    <Link className="menu-item admission" to='/admission' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>Admissão 2021/2022</Link>
+                    <Link className="menu-item admission" to='/admission' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>Inscrições 2021/2022</Link>
                     <h1 class="hr"></h1>
                 </li>
                 <li>

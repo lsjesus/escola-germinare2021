@@ -9,7 +9,7 @@ const Footer = ()=>{
             <Link to='/'><img src={logo} alt="Logo Oficial Germinare" className='logo-footer' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}/></Link>
             <ul className='footer-menu'>
                         <Link to='/admission' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>
-                            <li className='item-footer'>Admissão 2021/2022</li>
+                            <li className='item-footer'>Inscrições 2021/2022</li>
                         </Link>
                         <Link to='/donation' onClick={()=>{if (document.readyState === 'complete') {window.scroll(0, 0)}}}>
                             <li className='item-footer'>Doação</li>
